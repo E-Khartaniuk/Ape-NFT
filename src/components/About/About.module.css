@@ -1,0 +1,75 @@
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 360px;
+  background: #181818;
+
+  padding-top: 60px;
+}
+
+.aboutTitle {
+  width: 216px;
+
+  color: #fff;
+
+  font-family: 'Right Grotesk';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px; /* 100% */
+  text-transform: uppercase;
+
+  margin: 0px;
+}
+
+.aboutTitleOneSimple {
+  color: #dc3b5a;
+  font-family: 'Right Grotesk';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.aboutDiscription {
+  width: 216px;
+
+  color: #fff;
+
+  text-align: right;
+  font-family: 'Messina Sans Mono';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 118.75% */
+  text-transform: uppercase;
+
+  margin: 16px 0 0 0;
+}
+
+.AboutCros {
+  margin-top: 36px;
+}
+
+.aboutNote {
+  width: 216px;
+
+  color: #fff;
+
+  text-align: center;
+  font-family: 'Messina Sans Mono';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  text-transform: uppercase;
+
+  margin-top: 16px;
+}
+
+.aboutImg {
+  margin-top: 40px;
+}

@@ -1,0 +1,47 @@
+.rotating_text_container {
+  position: relative;
+  height: 52px;
+  width: 360px;
+  overflow: hidden;
+  background: #dc3b5a;
+}
+.rotating_text {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  align-items: flex-end;
+
+  color: #fff;
+
+  font-family: 'Right Grotesk';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px;
+  text-transform: uppercase;
+  animation: moveRight 15s linear infinite;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* .text {
+  display: inline-block;
+  margin-top: 12px;
+} */
+
+.cross {
+  width: 36px;
+  height: 36px;
+
+  margin: 6px 24px 0;
+}

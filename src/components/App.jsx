@@ -1,16 +1,21 @@
+import About from './About/About';
+import HaveNoLimits from './HaveNoLimits/HaveNoLimits';
+import Header from './Header/Header';
+import Hero from './Hero/Hero';
+import MindMap from './MindMap/MindMap';
+
+import css from './App.module.css';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <section>
+      <div className={css.appContainer}>
+        <Header />
+        <Hero />
+        <About />
+        <HaveNoLimits />
+        <MindMap />
+      </div>
+    </section>
   );
 };

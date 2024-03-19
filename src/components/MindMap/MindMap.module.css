@@ -1,0 +1,33 @@
+.mindMapSection {
+  width: 360px;
+  background: #181818;
+}
+
+.mindMapTitle {
+  color: #fff;
+
+  font-family: 'Right Grotesk';
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px; /* 90.909% */
+  text-transform: uppercase;
+
+  text-align: center;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.swiperSlideContainer {
+  margin: 0 auto;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 126px;
+  margin: 0 auto;
+}

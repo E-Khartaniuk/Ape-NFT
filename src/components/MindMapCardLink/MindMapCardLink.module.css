@@ -1,0 +1,57 @@
+.mindMapCardlink {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 216px;
+  height: 196px;
+  padding: 24px 12px;
+
+  margin: 24px auto 0;
+  /* padding: 24px auto; */
+
+  border-radius: 12px;
+  background: #dc3b5a;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.mindMapCardDescription {
+  width: 192px;
+
+  color: #fff;
+  font-family: 'Messina Sans Mono';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.mindMapCardBtn {
+  width: 192px;
+
+  color: #fff;
+  font-family: 'Right Grotesk';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: left;
+
+  margin: 78px 0 0;
+}
+
+.linkArrow {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+}
