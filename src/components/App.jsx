@@ -5,6 +5,7 @@ import Hero from './Hero/Hero';
 import MindMap from './MindMap/MindMap';
 
 import css from './App.module.css';
+import FAQ from './FAQ/FAQ';
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
         <About />
         <HaveNoLimits />
         <MindMap />
+        <FAQ />
       </div>
     </section>
   );

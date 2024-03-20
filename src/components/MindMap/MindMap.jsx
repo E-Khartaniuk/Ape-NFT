@@ -16,13 +16,7 @@ function MindMap() {
     <section className={css.mindMapSection}>
       <h2 className={css.mindMapTitle}>MIND MAP</h2>
 
-      <Swiper
-        // spaceBetween={22}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        centeredSlides={true}
-      >
+      <Swiper slidesPerView={1} centeredSlides={true}>
         <div className={css.swiperSlideContainer}>
           <div>
             <SwiperSlide>
@@ -47,9 +41,7 @@ function MindMap() {
             </SwiperSlide>
 
             <SwiperSlide>
-              <MindMapCardLink
-              // cardTitle={'Learn more in mind map'}
-              ></MindMapCardLink>
+              <MindMapCardLink></MindMapCardLink>
             </SwiperSlide>
           </div>
         </div>
@@ -59,8 +51,6 @@ function MindMap() {
           <SlideNextButton />
         </div>
       </Swiper>
-
-      <p>aaaaa</p>
     </section>
   );
 }

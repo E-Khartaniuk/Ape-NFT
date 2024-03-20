@@ -1,0 +1,87 @@
+.faqCardItem {
+  width: 216px;
+  height: fit-content;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #1e1e1e;
+}
+
+.faqCardThumb {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.faqCardTitle {
+  width: 169px;
+
+  color: #fff;
+  font-family: 'Right Grotesk';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20px; /* 100% */
+  text-transform: uppercase;
+
+  margin: 0;
+
+  cursor: pointer;
+}
+
+.faqCardItemActiveTitle {
+  color: #dc3b5a;
+}
+
+.faqCardItem:hover .faqCardTitle {
+  color: #dc3b5a;
+}
+
+.faqCardNumber {
+  color: #dc3b5a;
+  font-family: 'Biro Script Plus';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+
+.faqCardItemActiveNumber {
+  color: #fff;
+}
+
+.faqCardItem:hover .faqCardNumber {
+  color: #fff;
+}
+
+.faqCardDiscription {
+  width: 169px;
+
+  color: #fff;
+  font-family: 'Messina Sans Mono';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  text-transform: uppercase;
+
+  margin-left: auto;
+}
+
+.faqCardImg {
+  display: none;
+}
+
+/* @media (min-width: 360px) {
+  .faqCardImg {
+    display: block;
+
+    width: 182.613px;
+    height: 183px;
+    transform: rotate(-16deg);
+    flex-shrink: 0;
+
+    border-radius: 16px;
+  }
+} */

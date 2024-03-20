@@ -8,7 +8,7 @@ function Hero() {
       <span className={css.headerTitleAboveText}>diD yOu seE iT ?</span>
       <h1 className={css.heroTitle}>YACHT APES</h1>
       <span className={css.headerUnderAboveText}>Apes aRe eveRywhere</span>
-      <img src={heroImg} alt="hero image" className={css.heroImg} />
+      <img src={heroImg} alt="hero" className={css.heroImg} />
       <button type="button" className={css.heroBtn}>
         MEET APES
       </button>
