@@ -1,0 +1,47 @@
+.mobilemenuList {
+  display: flex;
+  border-radius: 12px 0px 0px 12px;
+  background: rgba(30, 30, 30, 0.1);
+  backdrop-filter: blur(6px);
+  width: fit-content;
+}
+
+.firstMenuItem {
+  display: inline-block;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 12px 0px 0px 12px;
+  /* background: rgba(30, 30, 30, 0.1);
+  backdrop-filter: blur(6px); */
+
+  color: #1e1e1e;
+}
+
+.menuItem {
+  display: inline-block;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+
+  color: #1e1e1e;
+  font-family: 'Messina Sans Mono';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 116.667% */
+
+  /* background: rgba(30, 30, 30, 0.1);
+  backdrop-filter: blur(6px); */
+  /* background-color: yellowgreen; */
+
+  cursor: pointer;
+}

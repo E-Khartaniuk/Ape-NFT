@@ -1,9 +1,19 @@
 .faqCardItem {
-  width: 216px;
+  width: 200px;
   height: fit-content;
   flex-shrink: 0;
   border-radius: 12px;
   background: #1e1e1e;
+  padding: 8px 8px 10px 8px;
+}
+
+.faqCardItemActive {
+  width: 200px;
+  height: fit-content;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #1e1e1e;
+  padding: 8px 8px 10px 8px;
 }
 
 .faqCardThumb {
@@ -11,11 +21,13 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 8px;
+
+  margin-top: 8px;
 }
 
 .faqCardTitle {
-  width: 169px;
+  width: 168px;
 
   color: #fff;
   font-family: 'Right Grotesk';

@@ -1,0 +1,19 @@
+.successRegisterContainer {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.successRegisterTitle {
+  width: 236px;
+  color: #fff;
+  font-family: 'Right Grotesk';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}

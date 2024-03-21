@@ -1,0 +1,41 @@
+.header {
+  width: 344px;
+  padding: 8px;
+  position: fixed;
+  z-index: 1;
+}
+
+.headerLogo {
+  display: inline-block;
+  fill: #1e1e1e;
+
+  width: 48px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.headerLogo :hover {
+  fill: #f0f0f0;
+}
+
+.headerLink {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: #1e1e1e;
+
+  border-radius: 8px;
+  background: rgba(30, 30, 30, 0.1);
+  backdrop-filter: blur(6px);
+
+  margin-top: 8px;
+}
+
+.headerLink:hover {
+  color: #f0f0f0;
+}

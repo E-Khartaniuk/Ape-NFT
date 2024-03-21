@@ -1,5 +1,6 @@
 .appContainer {
   width: 360px;
   margin: 0 auto;
+  padding-top: 54px;
   background: #181818;
 }

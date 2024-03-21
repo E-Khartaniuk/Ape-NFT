@@ -1,0 +1,36 @@
+.collectionSection {
+  width: 360px;
+  background: #181818;
+
+  padding-top: 60px;
+}
+
+.collectionTitle {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-family: 'Right Grotesk';
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px; /* 90.909% */
+  text-transform: uppercase;
+
+  text-align: center;
+  margin: 0;
+}
+
+.swiperSlideContainer {
+  margin: 0 auto;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 126px;
+  margin: 24px auto 0;
+}

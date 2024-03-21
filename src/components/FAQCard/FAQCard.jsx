@@ -4,7 +4,10 @@ import css from './FAQCard.module.css';
 function FAQCard({ number, title, image, description }) {
   const [openCard, setOpenCard] = useState(false);
   return (
-    <li key={number} className={openCard && css.faqCardItem}>
+    <li
+      key={number}
+      className={`${css.faqCardItem} ${openCard && css.faqCardItemActive}`}
+    >
       <div className={css.faqCardThumb}>
         <span
           className={`${css.faqCardNumber} ${

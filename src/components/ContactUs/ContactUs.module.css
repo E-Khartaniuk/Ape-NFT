@@ -1,0 +1,146 @@
+.contactsContainer {
+  width: 216px;
+  padding-top: 60px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.contactsTitle {
+  color: #fff;
+  font-family: 'Right Grotesk';
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px; /* 90.909% */
+  text-transform: uppercase;
+  text-align: center;
+
+  margin: 0;
+}
+
+.cross {
+  display: block;
+  width: 36px;
+  height: 36px;
+
+  margin: 24px auto 0;
+}
+
+.contatcsDescription {
+  width: 216px;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Messina Sans Mono';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 118.75% */
+  text-transform: uppercase;
+
+  margin: 16px auto 0;
+}
+
+.contactsForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsInputName,
+.contactsInputWallet {
+  width: 120px;
+  height: 4px;
+  padding: 22px 24px;
+  border-radius: 0px 8px 8px 0px;
+  border: 1px solid #1e1e1e;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.contactsInputName::placeholder,
+.contactsInputWallet::placeholder {
+  color: rgba(255, 255, 255, 0.24);
+}
+
+.inputNameError {
+  border: 1px solid #dc3b5a;
+  color: #dc3b5a;
+}
+
+.addFilledBorder {
+  border: 1px solid #fff;
+}
+
+.nameInputContainer,
+.walletInputContainer {
+  position: relative;
+  margin-left: auto;
+  margin-top: 16px;
+}
+.nameInputContainer::after,
+.walletInputContainer::after {
+  position: absolute;
+  top: 25px;
+  left: -48px;
+  transform: translateY(-50%);
+
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px 0px 0px 8px;
+  background: #1e1e1e;
+  backdrop-filter: blur(6px);
+}
+
+.walletInputContainer::after {
+  content: url('../../img/svg/metaMask_Icon.svg');
+}
+
+.nameInputContainer::after {
+  content: url('../../img/svg/discord.svg');
+}
+
+.contactsButton {
+  display: flex;
+  width: 216px;
+  padding: 10px 107px 12px;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-family: 'Right Grotesk';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 19px; /* 118.75% */
+
+  border-radius: 8px;
+  background: #dc3b5a;
+  backdrop-filter: blur(6px);
+
+  margin: 16px auto 0;
+}
+
+.contactsButton:hover {
+  color: #1e1e1e;
+}
+
+.errorMessage {
+  position: absolute;
+  right: 0;
+  color: #dc3b5a;
+
+  font-family: 'Messina Sans Mono';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 120% */
+  text-transform: uppercase;
+}

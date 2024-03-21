@@ -1,18 +1,37 @@
 import React from 'react';
+import css from './Header.module.css';
+import Logo from 'ui/Logo';
+import Discord from 'ui/Discord';
+import Ship from 'ui/Ship';
+import X from 'ui/X';
+import MobileMenu from 'components/MobileMenu/MobileMenu';
 
 function Header() {
   return (
-    <header>
+    <header className={css.header}>
       <nav>
-        {/* <img>Logo</img> */}
-        <button>OPEN</button>
-        <ul>
-          <li>ABOUT</li>
-          <li>M-MAP</li>
-          <li>FAQ</li>
-          <li>ARTS</li>
-          <li>MINT</li>
-        </ul>
+        <a href="/" className={css.headerLogo}>
+          <Logo />
+        </a>
+
+        <div>
+          <MobileMenu />
+        </div>
+
+        <a href="https://discord.com/" className={css.headerLink}>
+          <Discord />
+        </a>
+
+        <a
+          href="https://terra.vet/wp-content/uploads/59.jpg"
+          className={css.headerLink}
+        >
+          <Ship />
+        </a>
+
+        <a href="https://twitter.com/" className={css.headerLink}>
+          <X />
+        </a>
       </nav>
     </header>
   );
