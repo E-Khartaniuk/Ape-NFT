@@ -1,6 +1,7 @@
 import React from 'react';
 import css from './Hero.module.css';
 import heroImg from '../../img/Hero_Img_6s1.png';
+import closeMenuOnClick from 'components/helpers/scrollAndCloseMenu';
 
 function Hero() {
   return (
@@ -13,7 +14,12 @@ function Hero() {
 
       <img src={heroImg} alt="hero" className={css.heroImg} />
 
-      <button type="button" className={css.heroBtn}>
+      <button
+        type="button"
+        href="#MEET APES"
+        className={css.heroBtn}
+        onClick={e => closeMenuOnClick(e)}
+      >
         MEET APES
       </button>
 

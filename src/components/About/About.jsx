@@ -7,7 +7,7 @@ import cross from '../../img/svg/cross.svg';
 
 function About() {
   return (
-    <section className={css.aboutSection}>
+    <section className={css.aboutSection} id="ABOUT">
       <h2 className={css.aboutTitle}>
         a Story that started with{' '}
         <span className={css.aboutTitleOneSimple}>

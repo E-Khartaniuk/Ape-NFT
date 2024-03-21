@@ -59,7 +59,7 @@ function ContactUs() {
   };
 
   return (
-    <section className={css.contactsContainer}>
+    <section id="MEET APES" className={css.contactsContainer}>
       <h2 className={css.contactsTitle}>Are you in?</h2>
       <img src={cross} alt="cross" className={css.cross} />
       <p className={css.contatcsDescription}>

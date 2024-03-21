@@ -1,8 +1,17 @@
 .header {
+  position: relative;
   width: 344px;
   padding: 8px;
   position: fixed;
-  z-index: 1;
+  /* background-color: aliceblue; */
+
+  z-index: 2;
+}
+
+.mobileMenuContainer {
+  position: absolute;
+  right: 16px;
+  top: 8px;
 }
 
 .headerLogo {
@@ -12,6 +21,16 @@
   width: 48px;
   height: 32px;
   flex-shrink: 0;
+
+  margin-left: 8px;
+  margin-top: 8px;
+
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+.hideLogo {
+  pointer-events: none;
+  opacity: 0;
 }
 
 .headerLogo :hover {
@@ -34,8 +53,21 @@
   backdrop-filter: blur(6px);
 
   margin-top: 8px;
+  margin-left: auto;
+
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
 .headerLink:hover {
   color: #f0f0f0;
+}
+
+.headerLinkChangeColor {
+  /* opacity: 0; */
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.headerLinkChangeColor:hover {
+  color: #dc3b5a;
 }

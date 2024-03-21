@@ -10,7 +10,7 @@ import MindMapCardLink from 'components/MindMapCardLink/MindMapCardLink';
 
 function MindMap() {
   return (
-    <section className={css.mindMapSection}>
+    <section id="M-MAP" className={css.mindMapSection}>
       <h2 className={css.mindMapTitle}>MIND MAP</h2>
 
       <Swiper slidesPerView={1} centeredSlides={true}>

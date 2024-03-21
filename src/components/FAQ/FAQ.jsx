@@ -7,7 +7,7 @@ import FAQCard from 'components/FAQCard/FAQCard';
 function FAQ() {
   const faqDataArr = faqData();
   return (
-    <section className={css.faqSectionContainer}>
+    <section id="FAQ" className={css.faqSectionContainer}>
       <h2 className={css.faqTitle}>FAQ</h2>
       <ul className={css.faqList}>
         {faqDataArr.map(({ number, title, description, image }) => (

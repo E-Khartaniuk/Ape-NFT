@@ -13,7 +13,7 @@ import ArtsCollectionCard from 'components/ArtsCollectionCard/ArtsCollectionCard
 function Collection() {
   const collectionImagesData = collectionImages();
   return (
-    <section className={css.collectionSection}>
+    <section id="ARTS" className={css.collectionSection}>
       <h2 className={css.collectionTitle}>COLLECTION</h2>
       <Swiper slidesPerView={1} centeredSlides={true}>
         <div className={css.swiperSlideContainer}>
