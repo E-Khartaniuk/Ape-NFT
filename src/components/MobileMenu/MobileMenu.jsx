@@ -1,19 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import css from './MobileMenu.module.css';
 import Discord from 'ui/Discord';
 import Ship from 'ui/Ship';
 import X from 'ui/X';
 import closeMenuOnClick from 'components/helpers/scrollAndCloseMenu';
+import Logo from 'ui/Logo';
 
-function MobileMenu() {
-  const [showMenu, setShowMenu] = useState(false);
-
+function MobileMenu({ setShowMenu, showMenu }) {
   return (
     <div className={css.soctialLinkContainer}>
+      <div className={css.menuItem} onClick={() => setShowMenu(!showMenu)}>
+        {showMenu ? 'CLOSE' : 'MENU'}
+      </div>
+
+      <a href="/" className={css.menuLogo}>
+        <Logo />
+      </a>
+
       <div className={css.mobileMenuContainer}>
-        <a href="https://discord.com/" className={css.headerLink}>
+        <div href="https://discord.com/" className={css.headerLink}>
           <Discord />
-        </a>
+        </div>
         <a href="https://opensea.io/" className={css.headerLink}>
           <Ship />
         </a>
@@ -22,59 +29,64 @@ function MobileMenu() {
         </a>
       </div>
 
-      <div className={css.burgerMenuList}>
-        {showMenu && (
-          <a
-            href="#ABOUT"
-            className={css.menuItem}
-            onClick={e => {
-              closeMenuOnClick(e);
-              setShowMenu(false);
-            }}
-          >
-            ABOUT
-          </a>
-        )}
-        {showMenu && (
-          <a
-            href="#M-MAP"
-            className={css.menuItem}
-            onClick={e => {
-              closeMenuOnClick(e);
-              setShowMenu(false);
-            }}
-          >
-            M-MAP
-          </a>
-        )}
-        {showMenu && (
-          <a
-            href="#FAQ"
-            className={css.menuItem}
-            onClick={e => {
-              closeMenuOnClick(e);
-              setShowMenu(false);
-            }}
-          >
-            FAQ
-          </a>
-        )}
-        {showMenu && (
-          <a
-            href="#ARTS"
-            className={css.menuItem}
-            onClick={e => {
-              closeMenuOnClick(e);
-              setShowMenu(false);
-            }}
-          >
-            ARTS
-          </a>
-        )}
-
-        <a className={css.menuItem} onClick={() => setShowMenu(!showMenu)}>
-          {showMenu ? 'CLOSE' : 'MENU'}
+      <div className={css.mobileMenuList}>
+        <a
+          href="#ABOUT"
+          className={css.mobMenuItem}
+          onClick={e => {
+            closeMenuOnClick(e);
+            setShowMenu(false);
+          }}
+        >
+          ABOUT
         </a>
+
+        <a
+          href="#M-MAP"
+          className={css.mobMenuItem}
+          onClick={e => {
+            closeMenuOnClick(e);
+            setShowMenu(false);
+          }}
+        >
+          M-MAP
+        </a>
+
+        <a
+          href="#FAQ"
+          className={css.mobMenuItem}
+          onClick={e => {
+            closeMenuOnClick(e);
+            setShowMenu(false);
+          }}
+        >
+          FAQ
+        </a>
+
+        <a
+          href="#ARTS"
+          className={css.mobMenuItem}
+          onClick={e => {
+            closeMenuOnClick(e);
+            setShowMenu(false);
+          }}
+        >
+          ARTS
+        </a>
+
+        <a
+          href="#MINT"
+          className={css.mobMenuItem}
+          onClick={e => {
+            closeMenuOnClick(e);
+            setShowMenu(false);
+          }}
+        >
+          MINT
+        </a>
+      </div>
+      <div className={css.mobMenuFooter}>
+        {/* <Footer /> */}© Yacht ape 2024 all rights reserved
       </div>
     </div>
   );

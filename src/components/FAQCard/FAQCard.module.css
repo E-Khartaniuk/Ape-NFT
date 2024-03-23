@@ -3,11 +3,12 @@
   height: fit-content;
   flex-shrink: 0;
   border-radius: 12px;
-  background: #1e1e1e;
+
   padding: 8px 8px 10px 8px;
 }
 
 .faqCardItemActive {
+  position: relative;
   width: 200px;
   height: fit-content;
   flex-shrink: 0;
@@ -85,15 +86,47 @@
   display: none;
 }
 
-/* @media (min-width: 360px) {
+@media (min-width: 768px) {
   .faqCardImg {
+    position: absolute;
+    top: 0;
     display: block;
 
     width: 182.613px;
-    height: 183px;
+    /* height: 183px; */
     transform: rotate(-16deg);
     flex-shrink: 0;
 
     border-radius: 16px;
   }
-} */
+
+  .faqCardItem {
+    width: 592px;
+    padding: 18px 16px 23px;
+  }
+
+  .faqCardItemActive {
+    width: 592px;
+    padding: 18px 16px 23px;
+    background: #1e1e1e;
+    /* background-color: aquamarine; */
+  }
+  .faqCardThumb {
+    gap: 21px;
+  }
+
+  .faqCardTitle {
+    width: 339px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .faqCardDiscription {
+    width: 339px;
+  }
+
+  .faqCardNumber {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}

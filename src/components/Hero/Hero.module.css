@@ -1,18 +1,21 @@
 .heroSection {
-  position: relative;
+  /* width: 344px; */
+  max-width: 464px;
+  padding: 0 8px 0px;
+  /* height: 542px; */
+  margin: 0 auto;
+}
 
+.heroSectionContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  width: 344px;
-  height: 542px;
-  flex-shrink: 0;
-
-  border-radius: 12px;
+  min-width: 344px;
+  max-width: 464px;
   background: #dc3b5a;
-
-  margin: 0 auto;
+  border-radius: 12px;
 }
 
 .heroTitle {
@@ -28,6 +31,7 @@
 }
 
 .headerTitleAboveText {
+  display: inline-block;
   color: #1e1e1e;
 
   font-family: 'Biro Script Plus';
@@ -39,7 +43,7 @@
   margin-top: 36px;
 }
 
-.headerUnderAboveText {
+.headerUnderText {
   color: #1e1e1e;
 
   text-align: right;
@@ -58,6 +62,16 @@
   flex-shrink: 0;
 
   margin-top: 6px;
+}
+
+.heroImgBG {
+  /* position: absolute; */
+  margin-top: 6px;
+
+  width: 216px;
+  height: 284px;
+  background-image: url('../../img/Hero_Img_6s1.png');
+  background-repeat: no-repeat;
 }
 
 .heroBtn {
@@ -84,6 +98,10 @@
   font-weight: 900;
   line-height: 19px; /* 118.75% */
 }
+
+.heroBtn:hover {
+  color: #fff;
+}
 .heroDescription {
   width: 217px;
 
@@ -98,4 +116,91 @@
   text-transform: uppercase;
 
   margin: 49px auto 19px;
+}
+.spaces {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .heroSection {
+    max-width: 768px;
+    padding: 0 16px 0px;
+  }
+
+  .heroSectionContainer {
+    max-width: 732px;
+    height: 421px;
+    display: block;
+
+    border-radius: 16px;
+  }
+
+  .headerTitleAboveText {
+    font-size: 20px;
+    margin-top: 124px;
+    margin-left: 72px;
+  }
+
+  .heroImgBG {
+    position: absolute;
+    width: 283px;
+    height: 386px;
+
+    margin: 0;
+
+    background-image: url('../../img/Hero_Img_6s1_tablet.png');
+
+    transform: translate(-50%, 0%);
+    top: 35px;
+    left: 50%;
+  }
+
+  .heroTitle {
+    font-size: 92px;
+
+    line-height: 92px;
+    letter-spacing: 0.92px;
+
+    text-align-last: justify;
+    margin: 0 72px;
+  }
+
+  .headerUnderText {
+    margin-top: 16px;
+    margin-left: 72px;
+
+    font-size: 20px;
+    line-height: 33px; /* 165% */
+  }
+
+  .heroBtn {
+    /* display: inline-flex; */
+    bottom: 35px;
+    right: 72px;
+
+    width: 190px;
+
+    padding: 10px 58px 12px 58px;
+    border-radius: 12px;
+  }
+
+  .heroDescription {
+    position: absolute;
+    /* top: 273px; */
+    bottom: 92px;
+    right: 72px;
+    margin: 0;
+    width: 190px;
+    text-align: justify;
+  }
+
+  .spaces {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .heroSectionContainer {
+    max-width: 1280px;
+  }
 }

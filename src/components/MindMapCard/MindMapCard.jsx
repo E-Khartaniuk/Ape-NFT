@@ -6,9 +6,7 @@ function MindMapCard({ children, cardTitle }) {
   return (
     <div className={css.mindMapCardContainer}>
       <p className={css.mindMapCardDescription}>{children}</p>
-      <h4 type="button" className={css.mindMapCardBtn}>
-        {cardTitle}
-      </h4>
+      <h4 className={css.mindMapCardBtn}>{cardTitle}</h4>
     </div>
   );
 }

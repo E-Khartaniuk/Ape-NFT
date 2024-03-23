@@ -2,8 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 360px;
+
+  min-width: 360px;
+  max-width: 480px;
+
   padding-top: 60px;
+
+  background: #181818;
 }
 
 .faqTitle {
@@ -27,4 +32,28 @@
   margin: 24px 0 0;
 
   list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .faqSectionContainer {
+    max-width: 768px;
+    padding-top: 80px;
+  }
+
+  .faqTitle {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .faqSectionContainer {
+    padding-top: 120px;
+    max-width: 1280px;
+  }
+
+  .faqTitle {
+    font-size: 160px;
+    line-height: 160px;
+  }
 }

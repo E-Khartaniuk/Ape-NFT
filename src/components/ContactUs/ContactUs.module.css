@@ -1,16 +1,17 @@
 .contactsContainer {
-  width: 216px;
   padding-top: 60px;
   margin: 0 auto;
   padding-bottom: 30px;
+
+  min-width: 360px;
+  max-width: 480px;
+  background: #181818;
 }
 
 .contactsTitle {
   color: #fff;
   font-family: 'Right Grotesk';
   font-size: 44px;
-  font-style: normal;
-  font-weight: 900;
   line-height: 40px; /* 90.909% */
   text-transform: uppercase;
   text-align: center;
@@ -41,9 +42,14 @@
   margin: 16px auto 0;
 }
 
-.contactsForm {
+/* .contactsForm {
   display: flex;
   flex-direction: column;
+} */
+
+.inputThumb {
+  width: 216px;
+  margin: 0 auto;
 }
 
 .contactsInputName,
@@ -77,8 +83,11 @@
 
 .nameInputContainer,
 .walletInputContainer {
+  width: 216px;
+
   position: relative;
-  margin-left: auto;
+
+  margin-left: 48px;
   margin-top: 16px;
 }
 .nameInputContainer::after,
@@ -134,7 +143,7 @@
 
 .errorMessage {
   position: absolute;
-  right: 0;
+  right: 48px;
   color: #dc3b5a;
 
   font-family: 'Messina Sans Mono';
@@ -143,4 +152,120 @@
   font-weight: 400;
   line-height: 12px; /* 120% */
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .contactsContainer {
+    max-width: 768px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .contactsTitle {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .cross {
+    margin-top: 40px;
+  }
+  .contatcsDescription {
+    width: 397px;
+    margin-top: 24px;
+  }
+
+  .contactsInputName,
+  .contactsInputWallet {
+    width: 152px;
+  }
+
+  .errorMessage {
+    right: 48px;
+  }
+
+  .nameInputContainer,
+  .walletInputContainer {
+    width: 248px;
+    margin-top: 22px;
+  }
+  .nameInputContainer {
+    margin-top: 40px;
+  }
+  .inputThumb {
+    width: 248px;
+    margin: 0 auto;
+  }
+
+  .contactsButton {
+    width: 247px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contactsContainer {
+    max-width: 1280px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .contactsTitle {
+    font-size: 160px;
+    line-height: 160px;
+  }
+
+  .cross {
+    margin-top: 80px;
+  }
+
+  .contatcsDescription {
+    width: 581px;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 40px;
+  }
+
+  .contactsInputName,
+  .contactsInputWallet {
+    display: flex;
+    width: 285px;
+    height: 20px;
+    padding: 22px 24px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nameInputContainer::after,
+  .walletInputContainer::after {
+    width: 64px;
+    height: 64px;
+    top: 32px;
+    left: -64px;
+  }
+
+  .nameInputContainer,
+  .walletInputContainer {
+    width: 330px;
+    margin-top: 22px;
+    margin-left: 64px;
+  }
+
+  .errorMessage {
+    font-size: 12px;
+    line-height: 14px;
+    right: 0px;
+  }
+
+  .inputThumb {
+    width: 401px;
+    margin: 0 auto;
+  }
+
+  .contactsButton {
+    margin-top: 24px;
+    width: 397px;
+    height: 70px;
+    padding: 16px 140px 20px 140px;
+
+    font-size: 28px;
+    line-height: 34px;
+  }
 }

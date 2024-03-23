@@ -1,8 +1,9 @@
 .collectionSection {
-  width: 360px;
+  min-width: 360px;
+  max-width: 480px;
   background: #181818;
 
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .collectionTitle {
@@ -21,8 +22,14 @@
   margin: 0;
 }
 
+.swiperArts {
+  margin-top: 24px;
+}
+
 .swiperSlideContainer {
   margin: 0 auto;
+  width: 500px;
+  background-color: aqua;
 }
 
 .buttonContainer {
@@ -33,4 +40,39 @@
 
   width: 126px;
   margin: 24px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+  .collectionSection {
+    max-width: 768px;
+  }
+
+  .collectionTitle {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .swiperArts {
+    border-radius: 12px;
+    margin-top: 32px;
+    width: 616px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .collectionSection {
+    max-width: 1280px;
+  }
+
+  .collectionTitle {
+    font-size: 160px;
+    line-height: 160px;
+  }
+
+  .swiperArts {
+    margin-top: 80px;
+  }
+
+  .swiperArts {
+    width: 960px;
+  }
 }

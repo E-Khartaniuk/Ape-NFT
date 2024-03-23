@@ -1,6 +1,20 @@
 .appContainer {
-  width: 360px;
+  min-width: 360px;
+  max-width: 480px;
   margin: 0 auto;
   padding-top: 54px;
+
   background: #181818;
+}
+
+@media screen and (min-width: 768px) {
+  .appContainer {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .appContainer {
+    max-width: 1280px;
+  }
 }

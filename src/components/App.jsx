@@ -9,23 +9,22 @@ import FAQ from './FAQ/FAQ';
 import Collectiom from './Arts/Arts';
 import ContactUs from './ContactUs/ContactUs';
 import Footer from './Footer/Footer';
-import MobileMenu from './MobileMenu/MobileMenu';
+// import MobileMenu from './MobileMenu/MobileMenu';
 
 export const App = () => {
   return (
     <section>
       <div className={css.appContainer}>
-        <MobileMenu />
-        {/* <Header />
+        <Header />
         <Hero />
-        
+
         <About />
         <HaveNoLimits />
         <MindMap />
         <FAQ />
         <Collectiom />
         <ContactUs />
-        <Footer /> */}
+        <Footer />
       </div>
     </section>
   );

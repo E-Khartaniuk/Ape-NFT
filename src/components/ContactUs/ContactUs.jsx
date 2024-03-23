@@ -59,7 +59,7 @@ function ContactUs() {
   };
 
   return (
-    <section id="MEET APES" className={css.contactsContainer}>
+    <section id="MINT" className={css.contactsContainer}>
       <h2 className={css.contactsTitle}>Are you in?</h2>
       <img src={cross} alt="cross" className={css.cross} />
       <p className={css.contatcsDescription}>
@@ -68,41 +68,43 @@ function ContactUs() {
       </p>
       {!successRegister ? (
         <form action="" className={css.contactsForm}>
-          <div className={css.nameInputContainer}>
-            <input
-              type="text"
-              name="name"
-              placeholder="@username"
-              minLength={6}
-              required={true}
-              value={username}
-              onChange={handleInputChange}
-              onFocus={() => {
-                setUserNameFiled(!userNameFiled);
-              }}
-              className={`${css.contactsInputName} ${
-                username && !error ? css.addFilledBorder : ''
-              } ${error ? css.inputNameError : ''} `}
-            />
-            {error && <div className={css.errorMessage}>{error}</div>}
-          </div>
+          <div className={css.inputThumb}>
+            <div className={css.nameInputContainer}>
+              <input
+                type="text"
+                name="name"
+                placeholder="@username"
+                minLength={6}
+                required={true}
+                value={username}
+                onChange={handleInputChange}
+                onFocus={() => {
+                  setUserNameFiled(!userNameFiled);
+                }}
+                className={`${css.contactsInputName} ${
+                  username && !error ? css.addFilledBorder : ''
+                } ${error ? css.inputNameError : ''} `}
+              />
+              {error && <div className={css.errorMessage}>{error}</div>}
+            </div>
 
-          <div className={css.walletInputContainer}>
-            <input
-              type="text"
-              name="wallet"
-              placeholder="Wallet address"
-              required={true}
-              value={wallet}
-              onChange={handleWalletChange}
-              className={`${css.contactsInputWallet} 
+            <div className={css.walletInputContainer}>
+              <input
+                type="text"
+                name="wallet"
+                placeholder="Wallet address"
+                required={true}
+                value={wallet}
+                onChange={handleWalletChange}
+                className={`${css.contactsInputWallet} 
             ${wallet && !walletError ? css.addFilledBorder : ''}
             ${walletError ? css.inputNameError : ''} 
               `}
-            />
-            {walletError && (
-              <div className={css.errorMessage}>{walletError}</div>
-            )}
+              />
+              {walletError && (
+                <div className={css.errorMessage}>{walletError}</div>
+              )}
+            </div>
           </div>
           <button
             type="submit"

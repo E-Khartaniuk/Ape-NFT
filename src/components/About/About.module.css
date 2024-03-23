@@ -1,15 +1,20 @@
 .aboutSection {
   display: flex;
+
+  position: relative;
   flex-direction: column;
   align-items: center;
 
-  width: 360px;
+  min-width: 344px;
+  max-width: 464px;
   background: #181818;
 
   padding-top: 60px;
+  padding: 60px 8px 0 8px;
 }
 
-.aboutTitle {
+.aboutTitle,
+.aboutTitleDesctop {
   width: 216px;
 
   color: #fff;
@@ -34,7 +39,8 @@
   text-transform: uppercase;
 }
 
-.aboutDiscription {
+.aboutDiscription,
+.aboutDiscriptionDesctop {
   width: 216px;
 
   color: #fff;
@@ -50,7 +56,7 @@
   margin: 16px 0 0 0;
 }
 
-.AboutCros {
+.aboutCros {
   margin-top: 36px;
 }
 
@@ -71,5 +77,134 @@
 }
 
 .aboutImg {
-  margin-top: 40px;
+  margin: 40px 0 0 0;
+  width: 216px;
+  height: 292px;
+  background-image: url('../../img/AboutImg.png');
+  background-repeat: no-repeat;
+}
+
+.aboutTitleDesctop {
+  display: none;
+}
+
+.aboutDiscriptionDesctop {
+  display: none;
+}
+.aboutTabletThumb {
+  display: none;
+}
+
+.aboutNoteThumb {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutCrosTablet {
+  display: none;
+  margin-top: 36px;
+}
+
+.aboutNoteTablet {
+  display: none;
+  width: 216px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Messina Sans Mono';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  text-transform: uppercase;
+
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutSection {
+    display: flex;
+    padding-top: 80px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .aboutTabletThumb {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  .aboutTitleDesctop {
+    width: 290px;
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .aboutTitleOneSimpleTable {
+    display: block;
+    color: #dc3b5a;
+    font-family: 'Right Grotesk';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  .aboutTitle {
+    display: none;
+  }
+
+  .aboutDiscriptionDesctop {
+    width: 275px;
+    display: inline-block;
+    color: #fff;
+    text-align: right;
+    font-family: 'Messina Sans Mono';
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .aboutDiscription {
+    display: none;
+  }
+
+  .aboutCros {
+    display: none;
+  }
+
+  .aboutNote {
+    display: none;
+  }
+  .aboutImg {
+    position: absolute;
+    bottom: 0px;
+    right: 88px;
+    width: 313px;
+    height: 422px;
+    flex-shrink: 0;
+    background-image: url('../../img/AboutImgTablet.png');
+  }
+
+  .aboutCrosTablet {
+    display: inline-block;
+    margin-top: 68px;
+  }
+
+  .aboutNoteTablet {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    width: 269px;
+    margin: 24px 0 36px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .aboutSection {
+    max-width: 1280px;
+  }
 }

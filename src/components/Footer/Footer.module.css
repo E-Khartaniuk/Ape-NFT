@@ -5,7 +5,10 @@
 
   padding-top: 30px;
   padding-bottom: 24px;
-  width: 360px;
+
+  min-width: 360px;
+  max-width: 480px;
+  background: #181818;
 }
 
 .copyright {
@@ -20,4 +23,30 @@
   line-height: 14px; /* 116.667% */
   text-transform: uppercase;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footerContainer {
+    max-width: 768px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .copyright {
+    width: 274px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footerContainer {
+    max-width: 1280px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .copyright {
+    width: 364px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

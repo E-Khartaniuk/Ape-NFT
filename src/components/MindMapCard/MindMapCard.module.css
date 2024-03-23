@@ -42,3 +42,22 @@
 
   margin: 78px 0 0;
 }
+
+@media screen and (min-width: 768px) {
+  .mindMapCardContainer {
+    width: 236px;
+
+    padding: 24px;
+    margin: 0;
+  }
+
+  .mindMapCardDescription {
+    width: 128px;
+
+    margin-left: auto;
+  }
+  .mindMapCardBtn {
+    width: 236px;
+    margin: 0;
+  }
+}

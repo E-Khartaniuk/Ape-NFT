@@ -7,13 +7,22 @@ import X from 'ui/X';
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import { throttle } from 'lodash';
 
+import MobileMenu from 'components/MobileMenu/MobileMenu';
+
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleScroll = throttle(() => {
       const scrollTop = window.scrollY;
+      const screenWidth = window.innerWidth;
       setIsScrolled(scrollTop > 300);
+      if (screenWidth >= 1280) {
+        setScreenWidth(screenWidth);
+        setShowMenu(true);
+      }
     }, 100);
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -21,9 +30,39 @@ function Header() {
     };
   }, []);
 
+  const checkWindowWidth = () => {
+    if (screenWidth >= 1280) {
+      setShowMenu(true);
+      return true;
+    }
+    setShowMenu(!showMenu);
+    // return showMenu;
+  };
+
   return (
     <header className={css.header}>
-      <nav>
+      <div
+        className={`${css.menuItem} ${
+          isScrolled ? css.chengeMenuItemColor : ''
+        }`}
+        // onClick={() => setShowMenu(!showMenu)}
+        onClick={checkWindowWidth}
+      >
+        {showMenu ? 'CLOSE' : 'MENU'}
+      </div>
+
+      {showMenu && (
+        <BurgerMenu
+          changeMenuColor={isScrolled}
+          setShowMenu={setShowMenu}
+          showMenu={showMenu}
+          screenWidth={screenWidth}
+          checkWindowWidth={checkWindowWidth}
+        />
+      )}
+      {showMenu && <MobileMenu setShowMenu={setShowMenu} showMenu={showMenu} />}
+
+      <nav className={css.navFixed}>
         <a
           href="/"
           className={`${css.headerLogo} ${isScrolled ? css.hideLogo : ''}`}
@@ -32,7 +71,6 @@ function Header() {
         </a>
 
         <div className={css.mobileMenuContainer}>
-          <BurgerMenu changeMenuColor={isScrolled} />
           <a
             href="https://discord.com/"
             className={`${css.headerLink} ${

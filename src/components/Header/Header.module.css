@@ -1,17 +1,21 @@
 .header {
-  position: relative;
-  width: 344px;
-  padding: 8px;
   position: fixed;
-  /* background-color: aliceblue; */
+  /* width: 344px; */
 
+  width: 100%;
+  padding: 8px;
   z-index: 2;
+}
+
+.navFixed {
+  /* position: fixed; */
+  max-width: 480px;
 }
 
 .mobileMenuContainer {
   position: absolute;
-  right: 16px;
-  top: 8px;
+  right: 32px;
+  top: 56px;
 }
 
 .headerLogo {
@@ -63,11 +67,76 @@
 }
 
 .headerLinkChangeColor {
-  /* opacity: 0; */
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 
 .headerLinkChangeColor:hover {
   color: #dc3b5a;
+}
+
+.menuItem {
+  position: absolute;
+  right: 32px;
+  top: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+
+  color: #1e1e1e;
+  font-family: 'Messina Sans Mono';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 116.667% */
+
+  border-radius: 8px;
+  background: rgba(30, 30, 30, 0.1);
+  backdrop-filter: blur(6px);
+
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.menuItem:hover {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+
+.chengeMenuItemColor {
+  color: #f0f0f0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chengeMenuItemColor:hover {
+  color: #dc3b5a;
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .burgerMenuList {
+    display: none;
+  }
+  .header {
+    max-width: 480px;
+
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    max-width: 768px;
+
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    max-width: 1280px;
+  }
 }

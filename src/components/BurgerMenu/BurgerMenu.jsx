@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import css from './BurgerMenu.module.css';
 
 import closeMenuOnClick from 'components/helpers/scrollAndCloseMenu';
 
-function BurgerMenu({ changeMenuColor }) {
-  const [showMenu, setShowMenu] = useState(false);
-
+function BurgerMenu({ changeMenuColor, showMenu, setShowMenu }) {
   return (
     <div
       className={`${css.burgerMenuList} ${
@@ -26,6 +24,7 @@ function BurgerMenu({ changeMenuColor }) {
           ABOUT
         </a>
       )}
+
       {showMenu && (
         <a
           href="#M-MAP"
@@ -40,6 +39,7 @@ function BurgerMenu({ changeMenuColor }) {
           M-MAP
         </a>
       )}
+
       {showMenu && (
         <a
           href="#FAQ"
@@ -69,14 +69,29 @@ function BurgerMenu({ changeMenuColor }) {
         </a>
       )}
 
-      <a
+      {showMenu && (
+        <a
+          href="#MINT"
+          className={`${css.menuItem} ${
+            changeMenuColor ? css.chengeMenuItemColor : ''
+          }`}
+          onClick={e => {
+            closeMenuOnClick(e);
+            setShowMenu(false);
+          }}
+        >
+          MINT
+        </a>
+      )}
+
+      <div
         className={`${css.menuItem} ${
           changeMenuColor ? css.chengeMenuItemColor : ''
         }`}
         onClick={() => setShowMenu(!showMenu)}
       >
         {showMenu ? 'CLOSE' : 'MENU'}
-      </a>
+      </div>
     </div>
   );
 }

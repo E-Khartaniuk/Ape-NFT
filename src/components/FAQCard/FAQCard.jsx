@@ -1,35 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 import css from './FAQCard.module.css';
 
-function FAQCard({ number, title, image, description }) {
-  const [openCard, setOpenCard] = useState(false);
+function FAQCard({ number, title, image, description, isOpen, onToggle }) {
+  // const [openCard, setOpenCard] = useState(false);
+
   return (
     <li
       key={number}
-      className={`${css.faqCardItem} ${openCard && css.faqCardItemActive}`}
+      className={`${css.faqCardItem} ${isOpen && css.faqCardItemActive}`}
     >
       <div className={css.faqCardThumb}>
         <span
           className={`${css.faqCardNumber} ${
-            openCard && css.faqCardItemActiveNumber
+            isOpen && css.faqCardItemActiveNumber
           }`}
         >
           [ {number} ]
         </span>
         <h4
-          onClick={() => {
-            setOpenCard(!openCard);
-          }}
+          onClick={onToggle}
           className={`${css.faqCardTitle} ${
-            openCard && css.faqCardItemActiveTitle
+            isOpen && css.faqCardItemActiveTitle
           }`}
         >
           {title}
         </h4>
       </div>
 
-      {openCard && <p className={css.faqCardDiscription}>{description}</p>}
-      {openCard && <img src={image} alt={title} className={css.faqCardImg} />}
+      {isOpen && <p className={css.faqCardDiscription}>{description}</p>}
+      {isOpen && <img src={image} alt={title} className={css.faqCardImg} />}
     </li>
   );
 }

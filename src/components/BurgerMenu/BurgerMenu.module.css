@@ -1,59 +1,73 @@
 .burgerMenuList {
-  right: 9px;
-  display: flex;
-  border-radius: 12px 12px 12px 12px;
-  background: rgba(30, 30, 30, 0.1);
-  backdrop-filter: blur(6px);
-  width: fit-content;
-  margin-left: auto;
-
-  transition: background 0.25s ease;
+  display: none;
 }
 
-.chengeMenuListColor {
-  background: rgba(255, 255, 255, 0.1);
-}
+@media screen and (min-width: 768px) {
+  .burgerMenuList {
+    position: absolute;
+    right: 32px;
+    width: fit-content;
+    margin-left: auto;
 
-.firstMenuItem {
-  display: flex;
-  width: 48px;
-  height: 48px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    border-radius: 8px;
+    background: rgba(30, 30, 30, 0.1);
+    backdrop-filter: blur(6px);
 
-  border-radius: 12px 0px 0px 12px;
-  color: #1e1e1e;
-}
+    transition: background 0.25s ease;
+  }
 
-.menuItem {
-  display: inline-block;
-  display: flex;
-  width: 48px;
-  height: 48px;
-  justify-content: center;
-  align-items: center;
+  .chengeMenuListColor {
+    background: rgba(255, 255, 255, 0.1);
+  }
 
-  color: #1e1e1e;
-  font-family: 'Messina Sans Mono';
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 14px; /* 116.667% */
+  .firstMenuItem {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
-  cursor: pointer;
-  transition: color 0.25s ease;
-}
-.menuItem:hover {
-  color: #f0f0f0;
-  text-decoration: underline;
-}
+    border-radius: 12px 0px 0px 12px;
+    color: #1e1e1e;
 
-.chengeMenuItemColor {
-  color: #f0f0f0;
-}
+    transition: color 0.25s ease;
+  }
 
-.chengeMenuItemColor:hover {
-  color: #dc3b5a;
+  .firstMenuItem {
+    color: #fff;
+  }
+
+  .menuItem {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+
+    color: #1e1e1e;
+    font-family: 'Messina Sans Mono';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px; /* 116.667% */
+
+    cursor: pointer;
+    transition: color 0.25s ease;
+  }
+
+  .menuItem:hover {
+    color: #f0f0f0;
+    text-decoration: underline;
+  }
+
+  .chengeMenuItemColor {
+    color: #f0f0f0;
+  }
+
+  .chengeMenuItemColor:hover {
+    color: #dc3b5a;
+  }
 }

@@ -6,27 +6,33 @@ import closeMenuOnClick from 'components/helpers/scrollAndCloseMenu';
 function Hero() {
   return (
     <section className={css.heroSection}>
-      <span className={css.headerTitleAboveText}>diD yOu seE iT ?</span>
+      <div className={css.heroSectionContainer}>
+        <span className={css.headerTitleAboveText}>diD yOu seE iT ?</span>
 
-      <h1 className={css.heroTitle}>YACHT APES</h1>
+        <h1 className={css.heroTitle}>YACHT APES</h1>
 
-      <span className={css.headerUnderAboveText}>Apes aRe eveRywhere</span>
+        <span className={css.headerUnderText}>Apes aRe eveRywhere</span>
 
-      <img src={heroImg} alt="hero" className={css.heroImg} />
+        <div className={css.heroImgBG}></div>
+        {/* <img src={heroImg} alt="hero" className={css.heroImg} /> */}
 
-      <button
-        type="button"
-        href="#MEET APES"
-        className={css.heroBtn}
-        onClick={e => closeMenuOnClick(e)}
-      >
-        MEET APES
-      </button>
+        <button
+          type="button"
+          href="#MEET APES"
+          className={css.heroBtn}
+          onClick={e => closeMenuOnClick(e)}
+        >
+          MEET APES
+        </button>
 
-      <p className={css.heroDescription}>
-        Yacht Ape is a collection of unique digital apes that you can own in NFT
-        format
-      </p>
+        <p className={css.heroDescription}>
+          <span className={css.spaces}>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span>{' '}
+          Yacht Ape is a collection of unique digital apes that you can own in
+          NFT format
+        </p>
+      </div>
     </section>
   );
 }

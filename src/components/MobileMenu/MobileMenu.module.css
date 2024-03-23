@@ -1,15 +1,42 @@
 .soctialLinkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   position: absolute;
-  top: 0;
-  left: 50%;
+  top: -54px;
+  left: 180px;
+
   transform: translate(-50%, 0);
+
   width: 360px;
-  height: 100%;
-  background-color: #1e1e1e;
+  height: 100vh;
+  background-color: #181818;
   overflow: hidden;
   margin: 0 auto;
-
   z-index: 999;
+}
+
+.mobileMenuContainer {
+  position: absolute;
+  right: 16px;
+  top: 118px;
+}
+
+.menuLogo {
+  position: absolute;
+  left: 16px;
+  top: 70px;
+
+  width: 48px;
+  height: 32px;
+  flex-shrink: 0;
+
+  fill: #fff;
+}
+
+.menuLogo:hover {
+  fill: #dc3b5a;
 }
 
 .headerLink {
@@ -26,11 +53,101 @@
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6px);
+}
 
-  /* margin-top: 8px; */
-  margin-left: auto;
+.headerLink:not(:first-child) {
+  margin-top: 8px;
 }
 
 .headerLink:hover {
   color: #dc3b5a;
+}
+
+.mobileMenuList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 130px;
+}
+
+.mobMenuItem {
+  color: #fff;
+  font-family: 'Messina Sans Mono';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px; /* 120.833% */
+}
+
+.mobMenuItem:hover {
+  color: #dc3b5a;
+}
+
+.mobMenuItem:not(:first-child) {
+  margin-top: 16px;
+}
+
+.menuItem {
+  position: absolute;
+
+  right: 16px;
+  top: 62px;
+
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Messina Sans Mono';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 116.667% */
+
+  color: #ffffff;
+
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+
+  margin-left: auto;
+
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+.menuItem:hover {
+  color: #dc3b5a;
+  text-decoration: underline;
+}
+
+.mobMenuFooter {
+  display: inline-block;
+  width: 216px;
+  color: #fff;
+
+  font-family: 'Messina Sans Mono';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  text-transform: uppercase;
+  text-align: center;
+
+  margin: 0 auto 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .soctialLinkContainer {
+    width: 480px;
+
+    left: 240px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .soctialLinkContainer {
+    display: none;
+  }
 }
