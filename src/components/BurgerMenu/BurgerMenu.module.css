@@ -5,7 +5,7 @@
 @media screen and (min-width: 768px) {
   .burgerMenuList {
     position: absolute;
-    right: 40px;
+    right: 32px;
     top: 16px;
     width: fit-content;
     margin-left: auto;
@@ -15,7 +15,7 @@
     background: rgba(30, 30, 30, 0.1);
     backdrop-filter: blur(6px);
 
-    z-index: 3;
+    z-index: 5;
 
     transition: background 0.25s ease;
   }
@@ -72,5 +72,34 @@
 
   .chengeMenuItemColor:hover {
     color: #dc3b5a;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .burgerMenuList {
+    position: absolute;
+    right: 32px;
+    top: 16px;
+
+    border-radius: 12px;
+  }
+
+  .firstMenuItem {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .menuItem {
+    display: flex;
+    width: 80px;
+    height: 80px;
+
+    font-size: 16px;
+    line-height: 19px;
   }
 }

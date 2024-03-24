@@ -41,16 +41,6 @@ function Header() {
 
   return (
     <header className={css.header}>
-      {/* <div
-        className={`${css.menuItem} ${
-          isScrolled ? css.chengeMenuItemColor : ''
-        }`}
-        // onClick={() => setShowMenu(!showMenu)}
-        onClick={checkWindowWidth}
-      >
-        {showMenu ? 'CLOSE' : 'MENU'}
-      </div> */}
-
       {showMenu && (
         <BurgerMenu
           changeMenuColor={isScrolled}

@@ -45,8 +45,8 @@
 
 @media screen and (min-width: 768px) {
   .mindMapCardContainer {
-    width: 188px;
-    /* width: 236px; */
+    /* width: 188px; */
+    width: 236px;
 
     padding: 24px;
     margin: 0;

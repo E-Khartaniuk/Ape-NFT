@@ -170,11 +170,10 @@
     margin-left: 72px;
 
     font-size: 20px;
-    line-height: 33px; /* 165% */
+    line-height: 33px;
   }
 
   .heroBtn {
-    /* display: inline-flex; */
     bottom: 35px;
     right: 72px;
 
@@ -186,7 +185,7 @@
 
   .heroDescription {
     position: absolute;
-    /* top: 273px; */
+
     bottom: 92px;
     right: 72px;
     margin: 0;
@@ -203,8 +202,11 @@
   .heroSection {
     max-width: 1280px;
   }
+
   .heroSectionContainer {
     max-width: 1248px;
+
+    margin: 0 autopx;
     height: 677px;
   }
 

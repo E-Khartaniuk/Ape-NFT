@@ -15,7 +15,7 @@
 
 .mobileMenuContainer {
   position: absolute;
-  right: 32px;
+  right: 16px;
   top: 56px;
 }
 
@@ -27,7 +27,7 @@
   height: 32px;
   flex-shrink: 0;
 
-  margin-left: 8px;
+  margin-left: 16px;
   margin-top: 8px;
 
   opacity: 1;
@@ -78,7 +78,7 @@
 
 .menuItem {
   position: absolute;
-  right: 32px;
+  right: 16px;
   top: 8px;
 
   display: flex;
@@ -143,6 +143,19 @@
     margin-left: 32px;
     margin-top: 32px;
   }
+  .menuItem {
+    right: 32px;
+  }
+
+  .mobileMenuContainer {
+    right: 32px;
+  }
+
+  .headerLink {
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -151,5 +164,31 @@
   }
   .navFixed {
     max-width: 1280px;
+  }
+
+  .headerLink {
+    width: 24px;
+    height: 24px;
+    padding: 28px;
+    border-radius: 12px;
+  }
+
+  .headerLink:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  .mobileMenuContainer {
+    right: 32px;
+    top: 96px;
+  }
+
+  .menuItem {
+    width: 80px;
+    height: 80px;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    border-radius: 12px;
   }
 }
