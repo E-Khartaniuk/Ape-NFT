@@ -48,6 +48,7 @@ function Header() {
           changeMenuColor={isScrolled}
           setShowMenu={setShowMenu}
           showMenu={showMenu}
+          screenWidth={screenWidth}
         />
       )}
       {showMenu && <MobileMenu setShowMenu={setShowMenu} showMenu={showMenu} />}

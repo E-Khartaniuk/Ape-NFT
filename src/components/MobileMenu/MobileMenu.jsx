@@ -3,7 +3,7 @@ import css from './MobileMenu.module.css';
 import Discord from 'ui/Discord';
 import Ship from 'ui/Ship';
 import X from 'ui/X';
-import closeMenuOnClick from 'components/helpers/scrollAndCloseMenu';
+import scrollMenuOnClick from 'components/helpers/scrollAndCloseMenu';
 import Logo from 'ui/Logo';
 
 function MobileMenu({ setShowMenu, showMenu }) {
@@ -18,9 +18,9 @@ function MobileMenu({ setShowMenu, showMenu }) {
       </a>
 
       <div className={css.mobileMenuContainer}>
-        <div href="https://discord.com/" className={css.headerLink}>
+        <a href="https://discord.com/" className={css.headerLink}>
           <Discord />
-        </div>
+        </a>
         <a href="https://opensea.io/" className={css.headerLink}>
           <Ship />
         </a>
@@ -34,7 +34,7 @@ function MobileMenu({ setShowMenu, showMenu }) {
           href="#ABOUT"
           className={css.mobMenuItem}
           onClick={e => {
-            closeMenuOnClick(e);
+            scrollMenuOnClick(e);
             setShowMenu(false);
           }}
         >
@@ -45,7 +45,7 @@ function MobileMenu({ setShowMenu, showMenu }) {
           href="#M-MAP"
           className={css.mobMenuItem}
           onClick={e => {
-            closeMenuOnClick(e);
+            scrollMenuOnClick(e);
             setShowMenu(false);
           }}
         >
@@ -56,7 +56,7 @@ function MobileMenu({ setShowMenu, showMenu }) {
           href="#FAQ"
           className={css.mobMenuItem}
           onClick={e => {
-            closeMenuOnClick(e);
+            scrollMenuOnClick(e);
             setShowMenu(false);
           }}
         >
@@ -67,7 +67,7 @@ function MobileMenu({ setShowMenu, showMenu }) {
           href="#ARTS"
           className={css.mobMenuItem}
           onClick={e => {
-            closeMenuOnClick(e);
+            scrollMenuOnClick(e);
             setShowMenu(false);
           }}
         >
@@ -78,7 +78,7 @@ function MobileMenu({ setShowMenu, showMenu }) {
           href="#MINT"
           className={css.mobMenuItem}
           onClick={e => {
-            closeMenuOnClick(e);
+            scrollMenuOnClick(e);
             setShowMenu(false);
           }}
         >
@@ -86,7 +86,7 @@ function MobileMenu({ setShowMenu, showMenu }) {
         </a>
       </div>
       <div className={css.mobMenuFooter}>
-        {/* <Footer /> */}© Yacht ape 2024 all rights reserved
+        © Yacht ape 2024 all rights reserved
       </div>
     </div>
   );

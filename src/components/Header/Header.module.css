@@ -1,6 +1,5 @@
 .header {
   position: fixed;
-  /* width: 344px; */
 
   width: 100%;
   padding: 8px 0 8px 0;
@@ -9,7 +8,6 @@
 
 .navFixed {
   position: relative;
-  /* position: fixed; */
   max-width: 480px;
 }
 
@@ -190,5 +188,10 @@
     line-height: 19px;
 
     border-radius: 12px;
+  }
+
+  .headerLogo {
+    width: 72px;
+    height: 50px;
   }
 }

@@ -54,12 +54,11 @@ function ContactUs() {
       return;
     }
 
-    // alert('success submit');
     setSuccessRegister(true);
   };
 
   return (
-    <section id="MEET APES" className={css.contactsContainer}>
+    <section id="MINT" className={css.contactsContainer}>
       <h2 className={css.contactsTitle}>Are you in?</h2>
       <img src={cross} alt="cross" className={css.cross} />
       <p className={css.contatcsDescription}>
@@ -67,7 +66,7 @@ function ContactUs() {
         limited edition NFT
       </p>
       {!successRegister ? (
-        <form action="" className={css.contactsForm}>
+        <form className={css.contactsForm}>
           <div className={css.inputThumb}>
             <div className={css.nameInputContainer}>
               <input

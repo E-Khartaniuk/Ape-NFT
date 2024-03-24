@@ -1,6 +1,10 @@
 import React from 'react';
 import css from './Hero.module.css';
-import closeMenuOnClick from 'components/helpers/scrollAndCloseMenu';
+
+const handlescroll = () => {
+  const targetElement = document.getElementById(`MINT`);
+  targetElement.scrollIntoView({ behavior: 'smooth' });
+};
 
 function Hero() {
   return (
@@ -16,9 +20,12 @@ function Hero() {
 
         <button
           type="button"
-          href="#MEET APES"
+          aria-label="Go to registration form"
+          href="#MINT"
           className={css.heroBtn}
-          onClick={e => closeMenuOnClick(e)}
+          onClick={() => {
+            handlescroll();
+          }}
         >
           MEET APES
         </button>

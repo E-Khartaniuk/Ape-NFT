@@ -1,9 +1,9 @@
 import React from 'react';
 import css from './BurgerMenu.module.css';
 
-import closeMenuOnClick from 'components/helpers/scrollAndCloseMenu';
+import scrollMenuOnClick from 'components/helpers/scrollAndCloseMenu';
 
-function BurgerMenu({ changeMenuColor, showMenu, setShowMenu }) {
+function BurgerMenu({ changeMenuColor, showMenu, setShowMenu, screenWidth }) {
   return (
     <div
       className={`${css.burgerMenuList} ${
@@ -17,8 +17,9 @@ function BurgerMenu({ changeMenuColor, showMenu, setShowMenu }) {
             changeMenuColor ? css.chengeMenuItemColor : ''
           }`}
           onClick={e => {
-            closeMenuOnClick(e);
-            setShowMenu(false);
+            scrollMenuOnClick(e, setShowMenu, screenWidth);
+            // if (screenWidth >= 1280) return;
+            // setShowMenu(false);
           }}
         >
           ABOUT
@@ -32,8 +33,7 @@ function BurgerMenu({ changeMenuColor, showMenu, setShowMenu }) {
             changeMenuColor ? css.chengeMenuItemColor : ''
           }`}
           onClick={e => {
-            closeMenuOnClick(e);
-            setShowMenu(false);
+            scrollMenuOnClick(e, setShowMenu, screenWidth);
           }}
         >
           M-MAP
@@ -47,8 +47,7 @@ function BurgerMenu({ changeMenuColor, showMenu, setShowMenu }) {
             changeMenuColor ? css.chengeMenuItemColor : ''
           }`}
           onClick={e => {
-            closeMenuOnClick(e);
-            setShowMenu(false);
+            scrollMenuOnClick(e, setShowMenu, screenWidth);
           }}
         >
           FAQ
@@ -61,8 +60,7 @@ function BurgerMenu({ changeMenuColor, showMenu, setShowMenu }) {
             changeMenuColor ? css.chengeMenuItemColor : ''
           }`}
           onClick={e => {
-            closeMenuOnClick(e);
-            setShowMenu(false);
+            scrollMenuOnClick(e, setShowMenu, screenWidth);
           }}
         >
           ARTS
@@ -76,8 +74,7 @@ function BurgerMenu({ changeMenuColor, showMenu, setShowMenu }) {
             changeMenuColor ? css.chengeMenuItemColor : ''
           }`}
           onClick={e => {
-            closeMenuOnClick(e);
-            setShowMenu(false);
+            scrollMenuOnClick(e, setShowMenu, screenWidth);
           }}
         >
           MINT
