@@ -204,7 +204,51 @@
     max-width: 1280px;
   }
   .heroSectionContainer {
-    max-width: 1258px;
-    padding: 0 16px 0px;
+    max-width: 1248px;
+    height: 677px;
+  }
+
+  .heroTitle {
+    font-size: 164px;
+    line-height: 164px;
+
+    text-align-last: justify;
+    margin: 0 115px;
+  }
+
+  .headerTitleAboveText {
+    font-size: 24px;
+    margin-top: 182px;
+    margin-left: 120px;
+  }
+
+  .headerUnderText {
+    margin-top: 36px;
+    margin-left: 296px;
+
+    font-size: 24px;
+    line-height: 33px; /* 165% */
+  }
+
+  .heroImgBG {
+    position: absolute;
+    width: 463px;
+    height: 612px;
+    margin: 0;
+
+    background-image: url('../../img/Hero_Img_6s1_desctop1280.png');
+
+    transform: translate(-50%, 0%);
+
+    top: 65px;
+    left: 50%;
+  }
+
+  .heroDescription {
+    width: 337px;
+    font-size: 16px;
+    line-height: 19px;
+    bottom: 179px;
+    right: 112px;
   }
 }

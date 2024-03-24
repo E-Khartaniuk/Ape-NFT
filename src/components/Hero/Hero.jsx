@@ -13,7 +13,6 @@ function Hero() {
         <span className={css.headerUnderText}>Apes aRe eveRywhere</span>
 
         <div className={css.heroImgBG}></div>
-        {/* <img src={heroImg} alt="hero" className={css.heroImg} /> */}
 
         <button
           type="button"
@@ -27,7 +26,7 @@ function Hero() {
         <p className={css.heroDescription}>
           <span className={css.spaces}>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </span>{' '}
+          </span>
           Yacht Ape is a collection of unique digital apes that you can own in
           NFT format
         </p>
