@@ -3,11 +3,12 @@
   /* width: 344px; */
 
   width: 100%;
-  padding: 8px;
+  padding: 8px 0 8px 0;
   z-index: 2;
 }
 
 .navFixed {
+  position: relative;
   /* position: fixed; */
   max-width: 480px;
 }
@@ -90,7 +91,6 @@
   color: #1e1e1e;
   font-family: 'Messina Sans Mono';
   font-size: 12px;
-  font-style: normal;
   font-weight: 600;
   line-height: 14px; /* 116.667% */
 
@@ -100,6 +100,7 @@
 
   cursor: pointer;
   transition: color 0.25s ease;
+  z-index: 3;
 }
 
 .menuItem:hover {
@@ -133,10 +134,22 @@
 
     z-index: 2;
   }
+
+  .navFixed {
+    max-width: 768px;
+  }
+
+  .headerLogo {
+    margin-left: 32px;
+    margin-top: 32px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .header {
+    max-width: 1280px;
+  }
+  .navFixed {
     max-width: 1280px;
   }
 }

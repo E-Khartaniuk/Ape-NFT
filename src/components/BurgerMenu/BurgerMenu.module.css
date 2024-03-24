@@ -5,7 +5,8 @@
 @media screen and (min-width: 768px) {
   .burgerMenuList {
     position: absolute;
-    right: 32px;
+    right: 40px;
+    top: 16px;
     width: fit-content;
     margin-left: auto;
 
@@ -13,6 +14,8 @@
     border-radius: 8px;
     background: rgba(30, 30, 30, 0.1);
     backdrop-filter: blur(6px);
+
+    z-index: 3;
 
     transition: background 0.25s ease;
   }

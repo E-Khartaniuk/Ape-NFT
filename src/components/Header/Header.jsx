@@ -41,7 +41,7 @@ function Header() {
 
   return (
     <header className={css.header}>
-      <div
+      {/* <div
         className={`${css.menuItem} ${
           isScrolled ? css.chengeMenuItemColor : ''
         }`}
@@ -49,7 +49,7 @@ function Header() {
         onClick={checkWindowWidth}
       >
         {showMenu ? 'CLOSE' : 'MENU'}
-      </div>
+      </div> */}
 
       {showMenu && (
         <BurgerMenu
@@ -63,6 +63,15 @@ function Header() {
       {showMenu && <MobileMenu setShowMenu={setShowMenu} showMenu={showMenu} />}
 
       <nav className={css.navFixed}>
+        <div
+          className={`${css.menuItem} ${
+            isScrolled ? css.chengeMenuItemColor : ''
+          }`}
+          // onClick={() => setShowMenu(!showMenu)}
+          onClick={checkWindowWidth}
+        >
+          {showMenu ? 'CLOSE' : 'MENU'}
+        </div>
         <a
           href="/"
           className={`${css.headerLogo} ${isScrolled ? css.hideLogo : ''}`}
