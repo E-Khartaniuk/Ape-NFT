@@ -1,6 +1,5 @@
 import React from 'react';
 import css from './Hero.module.css';
-import heroImg from '../../img/Hero_Img_6s1.png';
 import closeMenuOnClick from 'components/helpers/scrollAndCloseMenu';
 
 function Hero() {
