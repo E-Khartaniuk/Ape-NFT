@@ -17,27 +17,29 @@ function Header() {
   useEffect(() => {
     const handleScroll = throttle(() => {
       const scrollTop = window.scrollY;
-      const screenWidth = window.innerWidth;
       setIsScrolled(scrollTop > 300);
-      if (screenWidth >= 1280) {
-        setScreenWidth(screenWidth);
-        setShowMenu(true);
-      }
     }, 100);
+
+    const handleResize = throttle(() => {
+      setScreenWidth(window.innerWidth);
+    }, 100);
+
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  const checkWindowWidth = () => {
+  useEffect(() => {
     if (screenWidth >= 1280) {
       setShowMenu(true);
-      return true;
+    } else if (screenWidth >= 768 && screenWidth <= 1279) {
+      setShowMenu(false);
     }
-    setShowMenu(!showMenu);
-    // return showMenu;
-  };
+  }, [screenWidth]);
 
   return (
     <header className={css.header}>
@@ -46,8 +48,6 @@ function Header() {
           changeMenuColor={isScrolled}
           setShowMenu={setShowMenu}
           showMenu={showMenu}
-          screenWidth={screenWidth}
-          checkWindowWidth={checkWindowWidth}
         />
       )}
       {showMenu && <MobileMenu setShowMenu={setShowMenu} showMenu={showMenu} />}
@@ -57,8 +57,7 @@ function Header() {
           className={`${css.menuItem} ${
             isScrolled ? css.chengeMenuItemColor : ''
           }`}
-          // onClick={() => setShowMenu(!showMenu)}
-          onClick={checkWindowWidth}
+          onClick={() => setShowMenu(!showMenu)}
         >
           {showMenu ? 'CLOSE' : 'MENU'}
         </div>

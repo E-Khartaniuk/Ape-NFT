@@ -245,6 +245,16 @@
     top: 65px;
     left: 50%;
   }
+  .heroBtn {
+    width: 337px;
+    height: 70px;
+
+    bottom: 80px;
+    right: 112px;
+
+    font-size: 28px;
+    line-height: 34px;
+  }
 
   .heroDescription {
     width: 337px;
