@@ -200,7 +200,11 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .heroSectionContainer {
+  .heroSection {
     max-width: 1280px;
+  }
+  .heroSectionContainer {
+    max-width: 1258px;
+    padding: 0 16px 0px;
   }
 }

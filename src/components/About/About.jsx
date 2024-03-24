@@ -31,11 +31,8 @@ function About() {
           <h2 className={css.aboutTitleDesctop}>
             a Story <br />
             that <br />
-            started <br /> with
-            <span className={css.aboutTitleOneSimpleTable}>
-              one <br />
-              simple ape
-            </span>
+            started <br /> with one
+            <span className={css.aboutTitleOneSimpleTable}>simple ape</span>
           </h2>
           <div className={css.aboutNoteThumb}>
             <img src={cross} alt="cross" className={css.aboutCrosTablet} />

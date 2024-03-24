@@ -82,34 +82,41 @@
   margin-left: auto;
 }
 
+.imgThumb {
+  display: none;
+}
+
 .faqCardImg {
   display: none;
 }
 
 @media (min-width: 768px) {
   .faqCardImg {
+    display: block;
+    width: 148px;
+    height: 183px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 16px;
+  }
+  .imgThumb {
     position: absolute;
     top: 0;
     display: block;
-
-    width: 182.613px;
-    /* height: 183px; */
     transform: rotate(-16deg);
-    flex-shrink: 0;
-
     border-radius: 16px;
   }
 
   .faqCardItem {
     width: 592px;
-    padding: 18px 16px 23px;
+    padding: 18px 16px 24px;
   }
 
   .faqCardItemActive {
     width: 592px;
-    padding: 18px 16px 23px;
+    padding: 18px 16px 24px;
     background: #1e1e1e;
-    /* background-color: aquamarine; */
   }
   .faqCardThumb {
     gap: 21px;
@@ -123,10 +130,62 @@
 
   .faqCardDiscription {
     width: 339px;
+    margin: 12px 0px 0px auto;
   }
 
   .faqCardNumber {
     font-size: 16px;
     line-height: 27px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .faqCardImg {
+    width: 248px;
+    height: 281.999px;
+    border-radius: 24px;
+  }
+
+  .imgThumb {
+    position: absolute;
+    transform: rotate(-8deg);
+
+    top: 0;
+    display: block;
+  }
+
+  .faqCardItem {
+    width: 1032px;
+    height: fit-content;
+
+    padding: 18px 16px 23px;
+  }
+
+  .faqCardItemActive {
+    width: 1032px;
+    height: 250px;
+    padding: 18px 16px 23px;
+    border-radius: 24px;
+    background: #1e1e1e;
+  }
+  .faqCardThumb {
+    gap: 27px;
+  }
+
+  .faqCardTitle {
+    width: 635px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .faqCardDiscription {
+    width: 635px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .faqCardNumber {
+    font-size: 24px;
+    line-height: 40px;
   }
 }

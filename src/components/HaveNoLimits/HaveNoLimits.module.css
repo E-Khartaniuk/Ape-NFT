@@ -50,6 +50,23 @@
 
 @media screen and (min-width: 1280px) {
   .rotating_text_container {
+    position: relative;
     max-width: 1280px;
+    height: 64px;
+    padding: 6px 0px 16px 0px;
+
+    align-items: center;
+  }
+
+  .rotating_text {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .cross {
+    width: 36px;
+    height: 36px;
+
+    margin: 16px 36px 10px;
   }
 }

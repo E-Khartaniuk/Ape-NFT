@@ -207,4 +207,34 @@
   .aboutSection {
     max-width: 1280px;
   }
+
+  .aboutTitleDesctop,
+  .aboutTitleOneSimpleTable {
+    width: 579px;
+    font-size: 120px;
+    line-height: 120px;
+  }
+
+  .aboutDiscriptionDesctop {
+    width: 409px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .aboutCrosTablet {
+    width: 36px;
+    height: 36px;
+  }
+
+  .aboutNoteTablet {
+    font-size: 24px;
+    line-height: 29px;
+    width: 417px;
+  }
+
+  .aboutImg {
+    width: 492px;
+    height: 662px;
+
+    background-image: url('../../img/AboutImgDesctop.png');
+  }
 }

@@ -2,8 +2,6 @@ import React from 'react';
 import css from './FAQCard.module.css';
 
 function FAQCard({ number, title, image, description, isOpen, onToggle }) {
-  // const [openCard, setOpenCard] = useState(false);
-
   return (
     <li
       key={number}
@@ -28,7 +26,23 @@ function FAQCard({ number, title, image, description, isOpen, onToggle }) {
       </div>
 
       {isOpen && <p className={css.faqCardDiscription}>{description}</p>}
-      {isOpen && <img src={image} alt={title} className={css.faqCardImg} />}
+      {/* {isOpen && (
+        <div className={css.imgThumb} >
+            <img src={image} alt={title} className={css.faqCardImg} />
+          </div>
+      )
+      } */}
+
+      {isOpen && (
+        <div className={css.imgThumb}>
+          <div
+            className={css.faqCardImg}
+            style={{
+              backgroundImage: `url(${image})`,
+            }}
+          ></div>
+        </div>
+      )}
     </li>
   );
 }

@@ -63,8 +63,13 @@
 }
 @media screen and (min-width: 1280px) {
   .mindMapSection {
-    padding-top: 120px;
     max-width: 1280px;
+    padding-top: 120px;
+  }
+
+  .cardsOn768Width {
+    width: 1032px;
+    padding-top: 80px;
   }
 
   .mindMapTitle {
