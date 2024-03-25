@@ -26,12 +26,6 @@ function FAQCard({ number, title, image, description, isOpen, onToggle }) {
       </div>
 
       {isOpen && <p className={css.faqCardDiscription}>{description}</p>}
-      {/* {isOpen && (
-        <div className={css.imgThumb} >
-            <img src={image} alt={title} className={css.faqCardImg} />
-          </div>
-      )
-      } */}
 
       {isOpen && (
         <div className={css.imgThumb}>

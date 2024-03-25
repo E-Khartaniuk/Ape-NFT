@@ -6,19 +6,12 @@ function HaveNoLimits() {
   return (
     <section className={css.rotating_text_container}>
       <div className={css.rotating_text}>
-        <img src={cross} alt="cross" className={css.cross} />
-        <span className={css.text}>Have No Limits</span>
-        <img src={cross} alt="cross" className={css.cross} />
-        <span className={css.text}>Have No Limits</span>
-        <img src={cross} alt="cross" className={css.cross} />
-        <span className={css.text}>Have No Limits</span>
-        <img src={cross} alt="cross" className={css.cross} />
-        <span className={css.text}>Have No Limits</span>
-        <img src={cross} alt="cross" className={css.cross} />
-        <span className={css.text}>Have No Limits</span>
-        <img src={cross} alt="cross" className={css.cross} />
-        <span className={css.text}>Have No Limits</span>
-        <img src={cross} alt="cross" className={css.cross} />
+        {[...Array(7)].map((_, index) => (
+          <React.Fragment key={index}>
+            <img src={cross} alt="cross" className={css.cross} />
+            <span className={css.text}>Have No Limits</span>
+          </React.Fragment>
+        ))}
       </div>
     </section>
   );

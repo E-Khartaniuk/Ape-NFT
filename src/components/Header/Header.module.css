@@ -14,7 +14,7 @@
 .mobileMenuContainer {
   position: absolute;
   right: 16px;
-  top: 56px;
+  top: 48px;
 }
 
 .headerLogo {
@@ -80,7 +80,7 @@
 .menuItem {
   position: absolute;
   right: 16px;
-  top: 8px;
+  top: 0px;
 
   display: flex;
   justify-content: center;
@@ -93,8 +93,7 @@
   font-family: 'Messina Sans Mono';
   font-size: 12px;
   font-weight: 600;
-  line-height: 14px; /* 116.667% */
-
+  line-height: 14px;  
   border-radius: 8px;
   background: rgba(30, 30, 30, 0.1);
   backdrop-filter: blur(6px);
@@ -147,10 +146,12 @@
   }
   .menuItem {
     right: 32px;
+    top: 8px;
   }
 
   .mobileMenuContainer {
     right: 32px;
+    top: 54px;
   }
 
   .headerLink {
@@ -171,6 +172,8 @@
   .headerLink {
     width: 24px;
     height: 24px;
+
+    margin-top: 16px;
     padding: 28px;
     border-radius: 12px;
   }
@@ -181,7 +184,7 @@
 
   .mobileMenuContainer {
     right: 32px;
-    top: 96px;
+    top: 88px;
   }
 
   .menuItem {

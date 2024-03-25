@@ -41,10 +41,7 @@ function MobileMenu({ setShowMenu, showMenu }) {
         </a>
       </nav>
 
-      <nav
-        //  className={css.mobileMenuList}
-        aria-label="Site navigation panel"
-      >
+      <nav aria-label="Site navigation panel">
         <ul className={css.mobileMenuList}>
           <li>
             <a
@@ -81,7 +78,7 @@ function MobileMenu({ setShowMenu, showMenu }) {
             >
               FAQ
             </a>
-          </li>{' '}
+          </li>
           <li>
             <a
               href="#ARTS"
@@ -93,7 +90,7 @@ function MobileMenu({ setShowMenu, showMenu }) {
             >
               ARTS
             </a>
-          </li>{' '}
+          </li>
           <li>
             <a
               href="#MINT"
@@ -104,7 +101,7 @@ function MobileMenu({ setShowMenu, showMenu }) {
               }}
             >
               MINT
-            </a>{' '}
+            </a>
           </li>
         </ul>
       </nav>

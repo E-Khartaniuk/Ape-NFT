@@ -13,6 +13,7 @@ function MindMap() {
     <section id="M-MAP" className={css.mindMapSection}>
       <h2 className={css.mindMapTitle}>MIND MAP</h2>
       <div className={css.swiperHide}>
+        {/* Swiper on mobile version */}
         <Swiper
           slidesPerView={1}
           centeredSlides={true}
@@ -51,7 +52,9 @@ function MindMap() {
           </div>
         </Swiper>
       </div>
+      {/* Swiper on mobile version */}
 
+      {/* Desctop grid card */}
       <div className={css.cardsOn768Width}>
         <MindMapCard cardTitle={'YAPE DROP'}>
           All owners of APE NFTs and all future collections will receive a
@@ -67,6 +70,7 @@ function MindMap() {
         </MindMapCard>
         <MindMapCardLink />
       </div>
+      {/* Desctop grid card */}
     </section>
   );
 }

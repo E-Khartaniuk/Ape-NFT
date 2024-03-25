@@ -1,7 +1,7 @@
 .successRegisterContainer {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 560px;
   height: 150px;
   margin: 0 auto;
 }
@@ -15,4 +15,16 @@
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .successRegisterContainer {
+    width: 530px;
+    align-items: center;
+  }
+  .successRegisterTitle {
+    width: 560px;
+    font-size: 64px;
+    line-height: 64px;
+  }
 }
