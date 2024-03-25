@@ -65,41 +65,11 @@ function Header() {
           </div>
         )}
         <a
-          href="/"
+          href="https://e-khartaniuk.github.io/Ape-NFT/"
           className={`${css.headerLogo} ${isScrolled ? css.hideLogo : ''}`}
         >
           <Logo />
         </a>
-
-        {/* <div className={css.mobileMenuContainer}>
-          <a
-            href="https://discord.com/"
-            aria-label="Go to discord"
-            className={`${css.headerLink} ${
-              isScrolled ? css.headerLinkChangeColor : ''
-            }`}
-          >
-            <Discord />
-          </a>
-          <a
-            href="https://opensea.io/"
-            aria-label="Go to opensea"
-            className={`${css.headerLink} ${
-              isScrolled ? css.headerLinkChangeColor : ''
-            }`}
-          >
-            <Ship />
-          </a>
-          <a
-            href="https://twitter.com/"
-            aria-label="Go to twitter"
-            className={`${css.headerLink} ${
-              isScrolled ? css.headerLinkChangeColor : ''
-            }`}
-          >
-            <X />
-          </a>
-        </div> */}
 
         <ul className={css.mobileMenuContainer}>
           <li>
