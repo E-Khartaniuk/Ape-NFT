@@ -63,11 +63,11 @@ function Collection() {
           <ul>
             {collectionImagesData.map(({ id, image }) => {
               return (
-                <div key={id}>
+                <li key={id}>
                   <SwiperSlide className={css.swiperSlide}>
                     <ArtsCollectionCard image={image} />
                   </SwiperSlide>
-                </div>
+                </li>
               );
             })}
           </ul>
