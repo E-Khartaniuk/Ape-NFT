@@ -5,81 +5,93 @@ import scrollMenuOnClick from 'components/helpers/scrollAndCloseMenu';
 
 function BurgerMenu({ changeMenuColor, showMenu, setShowMenu, screenWidth }) {
   return (
-    <div
+    <nav
+      aria-label="Site navigation panel"
       className={`${css.burgerMenuList} ${
         changeMenuColor ? css.chengeMenuListColor : ''
       }`}
     >
-      {showMenu && (
-        <a
-          href="#ABOUT"
-          className={`${css.menuItem} ${
-            changeMenuColor ? css.chengeMenuItemColor : ''
-          }`}
-          onClick={e => {
-            scrollMenuOnClick(e, setShowMenu, screenWidth);
-            // if (screenWidth >= 1280) return;
-            // setShowMenu(false);
-          }}
-        >
-          ABOUT
-        </a>
-      )}
+      <ul className={css.navList}>
+        {showMenu && (
+          <li>
+            <a
+              href="#ABOUT"
+              className={`${css.menuItem} ${
+                changeMenuColor ? css.chengeMenuItemColor : ''
+              }`}
+              onClick={e => {
+                scrollMenuOnClick(e, setShowMenu, screenWidth);
+              }}
+            >
+              ABOUT
+            </a>
+          </li>
+        )}
 
-      {showMenu && (
-        <a
-          href="#M-MAP"
-          className={`${css.menuItem} ${
-            changeMenuColor ? css.chengeMenuItemColor : ''
-          }`}
-          onClick={e => {
-            scrollMenuOnClick(e, setShowMenu, screenWidth);
-          }}
-        >
-          M-MAP
-        </a>
-      )}
+        {showMenu && (
+          <li>
+            <a
+              href="#M-MAP"
+              className={`${css.menuItem} ${
+                changeMenuColor ? css.chengeMenuItemColor : ''
+              }`}
+              onClick={e => {
+                scrollMenuOnClick(e, setShowMenu, screenWidth);
+              }}
+            >
+              M-MAP
+            </a>
+          </li>
+        )}
 
-      {showMenu && (
-        <a
-          href="#FAQ"
-          className={`${css.menuItem} ${
-            changeMenuColor ? css.chengeMenuItemColor : ''
-          }`}
-          onClick={e => {
-            scrollMenuOnClick(e, setShowMenu, screenWidth);
-          }}
-        >
-          FAQ
-        </a>
-      )}
-      {showMenu && (
-        <a
-          href="#ARTS"
-          className={`${css.menuItem} ${
-            changeMenuColor ? css.chengeMenuItemColor : ''
-          }`}
-          onClick={e => {
-            scrollMenuOnClick(e, setShowMenu, screenWidth);
-          }}
-        >
-          ARTS
-        </a>
-      )}
+        {showMenu && (
+          <li>
+            <a
+              href="#FAQ"
+              className={`${css.menuItem} ${
+                changeMenuColor ? css.chengeMenuItemColor : ''
+              }`}
+              onClick={e => {
+                scrollMenuOnClick(e, setShowMenu, screenWidth);
+              }}
+            >
+              FAQ
+            </a>
+          </li>
+        )}
 
-      {showMenu && (
-        <a
-          href="#MINT"
-          className={`${css.menuItem} ${
-            changeMenuColor ? css.chengeMenuItemColor : ''
-          }`}
-          onClick={e => {
-            scrollMenuOnClick(e, setShowMenu, screenWidth);
-          }}
-        >
-          MINT
-        </a>
-      )}
+        {showMenu && (
+          <li>
+            <a
+              href="#ARTS"
+              className={`${css.menuItem} ${
+                changeMenuColor ? css.chengeMenuItemColor : ''
+              }`}
+              onClick={e => {
+                scrollMenuOnClick(e, setShowMenu, screenWidth);
+              }}
+            >
+              ARTS
+            </a>
+          </li>
+        )}
+
+        {showMenu && (
+          <li>
+            <a
+              href="#MINT"
+              className={`${css.menuItem} ${
+                changeMenuColor ? css.chengeMenuItemColor : ''
+              }`}
+              onClick={e => {
+                scrollMenuOnClick(e, setShowMenu, screenWidth);
+              }}
+            >
+              MINT
+            </a>
+          </li>
+        )}
+      </ul>
 
       <div
         className={`${css.menuItem} ${
@@ -89,7 +101,7 @@ function BurgerMenu({ changeMenuColor, showMenu, setShowMenu, screenWidth }) {
       >
         {showMenu ? 'CLOSE' : 'MENU'}
       </div>
-    </div>
+    </nav>
   );
 }
 

@@ -36,7 +36,8 @@
   opacity: 0;
 }
 
-.headerLogo :hover {
+.headerLogo:hover,
+.headerLogo:focus {
   fill: #f0f0f0;
 }
 
@@ -61,7 +62,8 @@
   transition: background 0.25s ease, color 0.25s ease;
 }
 
-.headerLink:hover {
+.headerLink:hover,
+.headerLink:focus {
   color: #f0f0f0;
 }
 
@@ -70,7 +72,8 @@
   color: #fff;
 }
 
-.headerLinkChangeColor:hover {
+.headerLinkChangeColor:hover,
+.headerLinkChangeColor:focus {
   color: #dc3b5a;
 }
 
@@ -111,7 +114,8 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.chengeMenuItemColor:hover {
+.chengeMenuItemColor:hover,
+.chengeMenuItemColor:focus {
   color: #dc3b5a;
 }
 

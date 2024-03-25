@@ -15,9 +15,7 @@
   color: #fff;
   font-family: 'Right Grotesk';
   font-size: 44px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 40px; /* 90.909% */
+    line-height: 40px; 
   text-transform: uppercase;
 
   margin: 0 auto;
@@ -40,6 +38,10 @@
     padding-top: 80px;
   }
 
+  .faqList {
+    margin-top: 48px;
+  }
+
   .faqTitle {
     font-size: 80px;
     line-height: 80px;
@@ -50,6 +52,10 @@
   .faqSectionContainer {
     padding-top: 120px;
     max-width: 1280px;
+  }
+
+  .faqList {
+    margin-top: 80px;
   }
 
   .faqTitle {

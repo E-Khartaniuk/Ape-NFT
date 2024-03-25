@@ -2,28 +2,17 @@ import React, { useState } from 'react';
 import css from './ContactUs.module.css';
 
 import cross from '../../img/svg/cross.svg';
+import { isValidUsername, isValidWallet } from '../../regex/regex';
+
 import SuccessRegister from 'components/SuccessRegister/SuccessRegister';
 
 function ContactUs() {
   const [username, setUsername] = useState('');
   const [error, setError] = useState(false);
-
   const [wallet, setWallet] = useState('');
   const [walletError, setWalletError] = useState(false);
-
   const [userNameFiled, setUserNameFiled] = useState(false);
-
   const [successRegister, setSuccessRegister] = useState(false);
-
-  const isValidUsername = username => {
-    const usernameRegex = /^@[a-zA-Z0-9_]{1,15}$/;
-    return usernameRegex.test(username);
-  };
-
-  const isValidWallet = wallet => {
-    const walletRegex = /^[a-zA-Z0-9]{1,20}$/;
-    return walletRegex.test(wallet);
-  };
 
   const handleInputChange = event => {
     const value = event.target.value;
@@ -75,6 +64,7 @@ function ContactUs() {
                 placeholder="@username"
                 minLength={6}
                 required={true}
+                aria-describedby="Enter your discord login starting with @"
                 value={username}
                 onChange={handleInputChange}
                 onFocus={() => {
@@ -93,6 +83,7 @@ function ContactUs() {
                 name="wallet"
                 placeholder="Wallet address"
                 required={true}
+                aria-describedby="Enter your crypto wallet, from English letters and numbers"
                 value={wallet}
                 onChange={handleWalletChange}
                 className={`${css.contactsInputWallet} 
@@ -107,6 +98,7 @@ function ContactUs() {
           </div>
           <button
             type="submit"
+            aria-label="Submit form"
             className={css.contactsButton}
             onClick={event => handleContactsSubmit(event)}
           >

@@ -25,9 +25,10 @@ function About() {
         <br /> JOURNEY ON THE YACHT
       </p>
 
+      {/*Tablet-Desctop version */}
+
       <div className={css.aboutTabletThumb}>
         <div>
-          {' '}
           <h2 className={css.aboutTitleDesctop}>
             a Story <br />
             that <br />
@@ -50,6 +51,8 @@ function About() {
           <br /> JOURNEY ON THE <br /> YACHT
         </p>
       </div>
+
+      {/* Tablet-Desctop version*/}
 
       <img src={cross} alt="cross" className={css.aboutCros} />
       <p className={css.aboutNote}>

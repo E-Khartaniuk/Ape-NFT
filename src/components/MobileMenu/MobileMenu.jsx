@@ -17,74 +17,98 @@ function MobileMenu({ setShowMenu, showMenu }) {
         <Logo />
       </a>
 
-      <div className={css.mobileMenuContainer}>
-        <a href="https://discord.com/" className={css.headerLink}>
+      <nav className={css.mobileMenuContainer}>
+        <a
+          href="https://discord.com/"
+          aria-label="Go to discord"
+          className={css.headerLink}
+        >
           <Discord />
         </a>
-        <a href="https://opensea.io/" className={css.headerLink}>
+        <a
+          href="https://opensea.io/"
+          aria-label="Go to opensea"
+          className={css.headerLink}
+        >
           <Ship />
         </a>
-        <a href="https://twitter.com/" className={css.headerLink}>
+        <a
+          href="https://twitter.com/"
+          aria-label="Go to twitter"
+          className={css.headerLink}
+        >
           <X />
         </a>
-      </div>
+      </nav>
 
-      <div className={css.mobileMenuList}>
-        <a
-          href="#ABOUT"
-          className={css.mobMenuItem}
-          onClick={e => {
-            scrollMenuOnClick(e);
-            setShowMenu(false);
-          }}
-        >
-          ABOUT
-        </a>
+      <nav
+        //  className={css.mobileMenuList}
+        aria-label="Site navigation panel"
+      >
+        <ul className={css.mobileMenuList}>
+          <li>
+            <a
+              href="#ABOUT"
+              className={css.mobMenuItem}
+              onClick={e => {
+                scrollMenuOnClick(e);
+                setShowMenu(false);
+              }}
+            >
+              ABOUT
+            </a>
+          </li>
+          <li>
+            <a
+              href="#M-MAP"
+              className={css.mobMenuItem}
+              onClick={e => {
+                scrollMenuOnClick(e);
+                setShowMenu(false);
+              }}
+            >
+              M-MAP
+            </a>
+          </li>
+          <li>
+            <a
+              href="#FAQ"
+              className={css.mobMenuItem}
+              onClick={e => {
+                scrollMenuOnClick(e);
+                setShowMenu(false);
+              }}
+            >
+              FAQ
+            </a>
+          </li>{' '}
+          <li>
+            <a
+              href="#ARTS"
+              className={css.mobMenuItem}
+              onClick={e => {
+                scrollMenuOnClick(e);
+                setShowMenu(false);
+              }}
+            >
+              ARTS
+            </a>
+          </li>{' '}
+          <li>
+            <a
+              href="#MINT"
+              className={css.mobMenuItem}
+              onClick={e => {
+                scrollMenuOnClick(e);
+                setShowMenu(false);
+              }}
+            >
+              MINT
+            </a>{' '}
+          </li>
+        </ul>
+      </nav>
 
-        <a
-          href="#M-MAP"
-          className={css.mobMenuItem}
-          onClick={e => {
-            scrollMenuOnClick(e);
-            setShowMenu(false);
-          }}
-        >
-          M-MAP
-        </a>
-
-        <a
-          href="#FAQ"
-          className={css.mobMenuItem}
-          onClick={e => {
-            scrollMenuOnClick(e);
-            setShowMenu(false);
-          }}
-        >
-          FAQ
-        </a>
-
-        <a
-          href="#ARTS"
-          className={css.mobMenuItem}
-          onClick={e => {
-            scrollMenuOnClick(e);
-            setShowMenu(false);
-          }}
-        >
-          ARTS
-        </a>
-
-        <a
-          href="#MINT"
-          className={css.mobMenuItem}
-          onClick={e => {
-            scrollMenuOnClick(e);
-            setShowMenu(false);
-          }}
-        >
-          MINT
-        </a>
-      </div>
       <div className={css.mobMenuFooter}>
         © Yacht ape 2024 all rights reserved
       </div>

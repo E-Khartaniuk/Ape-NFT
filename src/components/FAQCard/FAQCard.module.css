@@ -33,9 +33,7 @@
   color: #fff;
   font-family: 'Right Grotesk';
   font-size: 20px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 20px; /* 100% */
+  line-height: 20px;
   text-transform: uppercase;
 
   margin: 0;
@@ -55,9 +53,8 @@
   color: #dc3b5a;
   font-family: 'Biro Script Plus';
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  font-weight: 600;
+  line-height: 20px;
 }
 
 .faqCardItemActiveNumber {
@@ -74,9 +71,7 @@
   color: #fff;
   font-family: 'Messina Sans Mono';
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px; /* 116.667% */
+  line-height: 14px;
   text-transform: uppercase;
 
   margin-left: auto;

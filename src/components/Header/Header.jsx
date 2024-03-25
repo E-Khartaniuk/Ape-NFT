@@ -54,14 +54,16 @@ function Header() {
       {showMenu && <MobileMenu setShowMenu={setShowMenu} showMenu={showMenu} />}
 
       <nav className={css.navFixed}>
-        <div
-          className={`${css.menuItem} ${
-            isScrolled ? css.chengeMenuItemColor : ''
-          }`}
-          onClick={() => setShowMenu(!showMenu)}
-        >
-          {showMenu ? 'CLOSE' : 'MENU'}
-        </div>
+        {!showMenu && (
+          <div
+            className={`${css.menuItem} ${
+              isScrolled ? css.chengeMenuItemColor : ''
+            }`}
+            onClick={() => setShowMenu(!showMenu)}
+          >
+            {showMenu ? 'CLOSE' : 'MENU'}
+          </div>
+        )}
         <a
           href="/"
           className={`${css.headerLogo} ${isScrolled ? css.hideLogo : ''}`}
@@ -72,6 +74,7 @@ function Header() {
         <div className={css.mobileMenuContainer}>
           <a
             href="https://discord.com/"
+            aria-label="Go to discord"
             className={`${css.headerLink} ${
               isScrolled ? css.headerLinkChangeColor : ''
             }`}
@@ -80,6 +83,7 @@ function Header() {
           </a>
           <a
             href="https://opensea.io/"
+            aria-label="Go to opensea"
             className={`${css.headerLink} ${
               isScrolled ? css.headerLinkChangeColor : ''
             }`}
@@ -88,6 +92,7 @@ function Header() {
           </a>
           <a
             href="https://twitter.com/"
+            aria-label="Go to twitter"
             className={`${css.headerLink} ${
               isScrolled ? css.headerLinkChangeColor : ''
             }`}

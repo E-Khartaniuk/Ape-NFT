@@ -13,7 +13,6 @@ import { throttle } from 'lodash';
 
 function Collection() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
   const [numberOfitems, setNumberOfitems] = useState(1);
 
   const collectionImagesData = collectionImages();
@@ -30,7 +29,6 @@ function Collection() {
         return;
       } else if (screenWidth >= 1280) {
         setNumberOfitems(4);
-        console.log('screenWidth', screenWidth);
 
         return;
       }

@@ -14,16 +14,13 @@
 }
 
 .aboutTitle,
-.aboutTitleDesctop {
+.aboutTitleDesctop,
+.aboutTitleOneSimple {
   width: 216px;
-
   color: #fff;
-
   font-family: 'Right Grotesk';
   font-size: 40px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 40px; /* 100% */
+  line-height: 40px;
   text-transform: uppercase;
 
   margin: 0px;
@@ -31,12 +28,6 @@
 
 .aboutTitleOneSimple {
   color: #dc3b5a;
-  font-family: 'Right Grotesk';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 40px;
-  text-transform: uppercase;
 }
 
 .aboutDiscription,
@@ -48,9 +39,7 @@
   text-align: right;
   font-family: 'Messina Sans Mono';
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 19px; /* 118.75% */
+  line-height: 19px;
   text-transform: uppercase;
 
   margin: 16px 0 0 0;
@@ -60,20 +49,22 @@
   margin-top: 36px;
 }
 
-.aboutNote {
+.aboutNote,
+.aboutNoteTablet {
   width: 216px;
 
   color: #fff;
-
   text-align: center;
   font-family: 'Messina Sans Mono';
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px; /* 116.667% */
+  line-height: 14px;
   text-transform: uppercase;
 
   margin-top: 16px;
+}
+
+.aboutNoteTablet {
+  display: none;
 }
 
 .aboutImg {
@@ -107,21 +98,6 @@
   margin-top: 36px;
 }
 
-.aboutNoteTablet {
-  display: none;
-  width: 216px;
-  color: #fff;
-  text-align: center;
-  font-family: 'Messina Sans Mono';
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px; /* 116.667% */
-  text-transform: uppercase;
-
-  margin-top: 16px;
-}
-
 @media screen and (min-width: 768px) {
   .aboutSection {
     display: flex;
@@ -146,12 +122,6 @@
   .aboutTitleOneSimpleTable {
     display: block;
     color: #dc3b5a;
-    font-family: 'Right Grotesk';
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 60px;
-    text-transform: uppercase;
   }
   .aboutTitle {
     display: none;
@@ -160,12 +130,6 @@
   .aboutDiscriptionDesctop {
     width: 275px;
     display: inline-block;
-    color: #fff;
-    text-align: right;
-    font-family: 'Messina Sans Mono';
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
     margin: 0;
   }
   .aboutDiscription {

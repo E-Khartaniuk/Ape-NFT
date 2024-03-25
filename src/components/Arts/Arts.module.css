@@ -13,9 +13,7 @@
   -webkit-text-stroke-color: #000;
   font-family: 'Right Grotesk';
   font-size: 44px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 40px; /* 90.909% */
+  line-height: 40px;
   text-transform: uppercase;
 
   text-align: center;
