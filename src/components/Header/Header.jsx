@@ -76,6 +76,7 @@ function Header() {
             <a
               href="https://discord.com/"
               aria-label="Go to discord"
+              target="_blank"
               className={`${css.headerLink} ${
                 isScrolled ? css.headerLinkChangeColor : ''
               }`}
@@ -87,6 +88,7 @@ function Header() {
             <a
               href="https://opensea.io/"
               aria-label="Go to opensea"
+              target="_blank"
               className={`${css.headerLink} ${
                 isScrolled ? css.headerLinkChangeColor : ''
               }`}
@@ -98,6 +100,7 @@ function Header() {
             <a
               href="https://twitter.com/"
               aria-label="Go to twitter"
+              target="_blank"
               className={`${css.headerLink} ${
                 isScrolled ? css.headerLinkChangeColor : ''
               }`}
