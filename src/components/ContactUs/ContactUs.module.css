@@ -129,6 +129,8 @@
   backdrop-filter: blur(6px);
 
   margin: 16px auto 0;
+
+  transition: color 0.25s ease;
 }
 
 .contactsButton:hover,
