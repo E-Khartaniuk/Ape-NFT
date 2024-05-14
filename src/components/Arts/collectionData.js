@@ -15,34 +15,21 @@ import ape14 from '../../img/ape_colection/14.png';
 
 function collectionImages() {
   return [
-    { id: 1, image: ape1 },
-    { id: 2, image: ape2 },
-    { id: 3, image: ape3 },
-    { id: 4, image: ape4 },
-    { id: 5, image: ape5 },
-    { id: 6, image: ape6 },
-    { id: 7, image: ape7 },
-    { id: 8, image: ape8 },
-    { id: 9, image: ape9 },
-    { id: 10, image: ape10 },
-    { id: 11, image: ape11 },
-    { id: 12, image: ape12 },
-    { id: 13, image: ape13 },
-    { id: 14, image: ape14 },
+    { id: 11, image: ape1 },
+    { id: 22, image: ape2 },
+    { id: 33, image: ape3 },
+    { id: 44, image: ape4 },
+    { id: 55, image: ape5 },
+    { id: 66, image: ape6 },
+    { id: 77, image: ape7 },
+    { id: 88, image: ape8 },
+    { id: 99, image: ape9 },
+    { id: 100, image: ape10 },
+    { id: 110, image: ape11 },
+    { id: 120, image: ape12 },
+    { id: 130, image: ape13 },
+    { id: 140, image: ape14 },
   ];
 }
 
 export default collectionImages;
-
-// const importAll = context => {
-//   let images = {};
-//   context.keys().map(item => {
-//     return (images[item.replace('./', '')] = context(item));
-//   });
-//   return images;
-// };
-// const images = importAll(
-//   require.context('../../img/ape_colection', false, /\.(png|jpe?g|svg)$/)
-// );
-
-// export default images;

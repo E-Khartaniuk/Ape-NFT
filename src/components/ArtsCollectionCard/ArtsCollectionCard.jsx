@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import css from './ArtsCollectionCard.module.css';
 function ArtsCollectionCard({ image }) {
   return (
@@ -7,5 +9,9 @@ function ArtsCollectionCard({ image }) {
     </div>
   );
 }
+
+ArtsCollectionCard.propTypes = {
+  image: PropTypes.string.isRequired,
+};
 
 export default ArtsCollectionCard;

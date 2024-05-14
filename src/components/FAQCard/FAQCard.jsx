@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import css from './FAQCard.module.css';
 
 function FAQCard({ number, title, image, description, isOpen, onToggle }) {
@@ -40,5 +41,14 @@ function FAQCard({ number, title, image, description, isOpen, onToggle }) {
     </li>
   );
 }
+
+FAQCard.propTypes = {
+  number: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onToggle: PropTypes.func.isRequired,
+};
 
 export default FAQCard;

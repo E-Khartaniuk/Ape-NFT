@@ -39,6 +39,8 @@
   margin: 0;
 
   cursor: pointer;
+
+  transition: color 0.25s ease;
 }
 
 .faqCardItemActiveTitle {
@@ -55,6 +57,7 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 20px;
+  transition: color 0.25s ease;
 }
 
 .faqCardItemActiveNumber {

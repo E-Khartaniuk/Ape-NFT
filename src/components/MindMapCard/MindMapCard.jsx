@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import css from './MindMapCard.module.css';
 
 function MindMapCard({ children, cardTitle }) {
@@ -10,5 +10,10 @@ function MindMapCard({ children, cardTitle }) {
     </div>
   );
 }
+
+MindMapCard.propTypes = {
+  children: PropTypes.node.isRequired,
+  cardTitle: PropTypes.string.isRequired,
+};
 
 export default MindMapCard;

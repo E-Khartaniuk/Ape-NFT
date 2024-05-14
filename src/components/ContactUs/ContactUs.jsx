@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import css from './ContactUs.module.css';
 
 import cross from '../../img/svg/cross.svg';
@@ -38,11 +39,12 @@ function ContactUs() {
   const handleContactsSubmit = event => {
     event.preventDefault();
     if (error || walletError || !username || !wallet) {
-      alert('Invalid data');
+      toast.error('Invalid data');
+
       setSuccessRegister(false);
       return;
     }
-
+    toast.success('Successfully!');
     setSuccessRegister(true);
   };
 
@@ -108,6 +110,7 @@ function ContactUs() {
       ) : (
         <SuccessRegister />
       )}
+      <Toaster />
     </section>
   );
 }

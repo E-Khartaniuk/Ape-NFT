@@ -1,8 +1,8 @@
 import React from 'react';
-import css from './MindMap.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/pagination';
+import css from './MindMap.module.css';
 import SlideNextButton from './SlideNextButton';
 import SlidePrevButton from './SlidePrevButton';
 import MindMapCard from 'components/MindMapCard/MindMapCard';
@@ -21,38 +21,37 @@ function MindMap() {
           className={css.swiperHide}
         >
           <div className={css.swiperSlideContainer}>
-            <ul>
-              <li>
-                <SwiperSlide>
-                  <MindMapCard cardTitle={'YAPE DROP'}>
-                    All owners of APE NFTs and all future collections will
-                    receive a percentage of sales based on the number of NFTs
-                    they own
-                  </MindMapCard>
-                </SwiperSlide>
-              </li>
-              <li>
-                <SwiperSlide>
-                  <MindMapCard cardTitle={'New Collection'}>
-                    Launch of the 2nd YACHT Collection Releasing the first
-                    version of the Ape Slam Game
-                  </MindMapCard>
-                </SwiperSlide>
-              </li>
-              <li>
-                <SwiperSlide>
-                  <MindMapCard cardTitle={'Token'}>
-                    Launch your own token, the proceeds of which will go to a
-                    global fund to LAUNCH YACHT CLUB AND PROMOTE it
-                  </MindMapCard>
-                </SwiperSlide>
-              </li>
-              <li>
-                <SwiperSlide>
-                  <MindMapCardLink />
-                </SwiperSlide>
-              </li>
-            </ul>
+            {/* <ul> */}
+            {/* <li key="1"> */}
+            <SwiperSlide>
+              <MindMapCard cardTitle={'YAPE DROP'}>
+                All owners of APE NFTs and all future collections will receive a
+                percentage of sales based on the number of NFTs they own
+              </MindMapCard>
+            </SwiperSlide>
+            {/* </li> */}
+            {/* <li key="2"> */}
+            <SwiperSlide>
+              <MindMapCard cardTitle={'New Collection'}>
+                Launch of the 2nd YACHT Collection Releasing the first version
+                of the Ape Slam Game
+              </MindMapCard>
+            </SwiperSlide>
+            {/* </li> */}
+            {/* <li key="3"> */}
+            <SwiperSlide>
+              <MindMapCard cardTitle={'Token'}>
+                Launch your own token, the proceeds of which will go to a global
+                fund to LAUNCH YACHT CLUB AND PROMOTE it
+              </MindMapCard>
+            </SwiperSlide>
+            {/* </li> */}
+            {/* <li key="4"> */}
+            <SwiperSlide>
+              <MindMapCardLink />
+            </SwiperSlide>
+            {/* </li> */}
+            {/* </ul> */}
           </div>
 
           <div className={css.buttonContainer}>
@@ -65,19 +64,19 @@ function MindMap() {
 
       {/* Desctop grid card */}
       <ul className={css.cardsOn768Width}>
-        <li>
+        <li key="1">
           <MindMapCard cardTitle={'YAPE DROP'}>
             All owners of APE NFTs and all future collections will receive a
             percentage of sales based on the number of NFTs they own
           </MindMapCard>
         </li>
-        <li>
+        <li key="2">
           <MindMapCard cardTitle={'New Collection'}>
             Launch of the 2nd YACHT Collection Releasing the first version of
             the Ape Slam Game
           </MindMapCard>
         </li>
-        <li>
+        <li key="3">
           <MindMapCard cardTitle={'Token'}>
             Launch your own token, the proceeds of which will go to a global
             fund to LAUNCH YACHT CLUB AND PROMOTE it

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import css from './MobileMenu.module.css';
 import Discord from 'ui/Discord';
 import Ship from 'ui/Ship';
@@ -112,5 +113,10 @@ function MobileMenu({ setShowMenu, showMenu }) {
     </div>
   );
 }
+
+MobileMenu.propTypes = {
+  setShowMenu: PropTypes.func.isRequired,
+  showMenu: PropTypes.bool.isRequired,
+};
 
 export default MobileMenu;

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { throttle } from 'lodash';
+import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import css from './Header.module.css';
 import Logo from 'ui/Logo';
 import Discord from 'ui/Discord';
 import Ship from 'ui/Ship';
 import X from 'ui/X';
-import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
-import { throttle } from 'lodash';
 
 import MobileMenu from 'components/MobileMenu/MobileMenu';
 

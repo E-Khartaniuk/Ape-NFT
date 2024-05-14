@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { throttle } from 'lodash';
 import SlideNextButton from 'components/MindMap/SlideNextButton';
 import SlidePrevButton from 'components/MindMap/SlidePrevButton';
 import 'swiper/swiper-bundle.css';
@@ -9,7 +10,6 @@ import css from './Arts.module.css';
 
 import collectionImages from './collectionData';
 import ArtsCollectionCard from 'components/ArtsCollectionCard/ArtsCollectionCard';
-import { throttle } from 'lodash';
 
 function Collection() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -60,19 +60,14 @@ function Collection() {
         className={css.swiperArts}
       >
         <div className={css.swiperSlideContainer}>
-          <ul>
-            {collectionImagesData.map(({ id, image }) => {
-              return (
-                <li key={id}>
-                  <SwiperSlide className={css.swiperSlide}>
-                    <ArtsCollectionCard image={image} />
-                  </SwiperSlide>
-                </li>
-              );
-            })}
-          </ul>
+          {collectionImagesData.map(({ id, image }) => {
+            return (
+              <SwiperSlide className={css.swiperSlide}>
+                <ArtsCollectionCard image={image} />
+              </SwiperSlide>
+            );
+          })}
         </div>
-
         <div className={css.buttonContainer}>
           <SlidePrevButton />
           <SlideNextButton />

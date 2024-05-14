@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import css from './BurgerMenu.module.css';
 
 import scrollMenuOnClick from 'components/helpers/scrollAndCloseMenu';
@@ -104,5 +105,12 @@ function BurgerMenu({ changeMenuColor, showMenu, setShowMenu, screenWidth }) {
     </nav>
   );
 }
+
+BurgerMenu.propTypes = {
+  changeMenuColor: PropTypes.bool.isRequired,
+  showMenu: PropTypes.bool.isRequired,
+  setShowMenu: PropTypes.func.isRequired,
+  screenWidth: PropTypes.number.isRequired,
+};
 
 export default BurgerMenu;
