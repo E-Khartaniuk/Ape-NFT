@@ -21,37 +21,30 @@ function MindMap() {
           className={css.swiperHide}
         >
           <div className={css.swiperSlideContainer}>
-            {/* <ul> */}
-            {/* <li key="1"> */}
             <SwiperSlide>
               <MindMapCard cardTitle={'YAPE DROP'}>
                 All owners of APE NFTs and all future collections will receive a
                 percentage of sales based on the number of NFTs they own
               </MindMapCard>
             </SwiperSlide>
-            {/* </li> */}
-            {/* <li key="2"> */}
+
             <SwiperSlide>
               <MindMapCard cardTitle={'New Collection'}>
                 Launch of the 2nd YACHT Collection Releasing the first version
                 of the Ape Slam Game
               </MindMapCard>
             </SwiperSlide>
-            {/* </li> */}
-            {/* <li key="3"> */}
+
             <SwiperSlide>
               <MindMapCard cardTitle={'Token'}>
                 Launch your own token, the proceeds of which will go to a global
                 fund to LAUNCH YACHT CLUB AND PROMOTE it
               </MindMapCard>
             </SwiperSlide>
-            {/* </li> */}
-            {/* <li key="4"> */}
+
             <SwiperSlide>
               <MindMapCardLink />
             </SwiperSlide>
-            {/* </li> */}
-            {/* </ul> */}
           </div>
 
           <div className={css.buttonContainer}>
