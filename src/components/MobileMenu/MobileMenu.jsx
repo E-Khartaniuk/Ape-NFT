@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import css from './MobileMenu.module.css';
-import Discord from 'ui/Discord';
-import Ship from 'ui/Ship';
-import X from 'ui/X';
+// import Discord from 'ui/Discord';
+// import Ship from 'ui/Ship';
+// import X from 'ui/X';
 import scrollMenuOnClick from 'components/helpers/scrollAndCloseMenu';
 import Logo from 'ui/Logo';
 
@@ -22,24 +22,18 @@ function MobileMenu({ setShowMenu, showMenu }) {
         <a
           href="https://discord.com/"
           aria-label="Go to discord"
-          className={css.headerLink}
-        >
-          <Discord />
-        </a>
+          className={` ${css.headerLink} ${css.linkBeforeDiscord}`}
+        ></a>
         <a
           href="https://opensea.io/"
           aria-label="Go to opensea"
-          className={css.headerLink}
-        >
-          <Ship />
-        </a>
+          className={` ${css.headerLink} ${css.linkBeforeShip}`}
+        ></a>
         <a
           href="https://twitter.com/"
           aria-label="Go to twitter"
-          className={css.headerLink}
-        >
-          <X />
-        </a>
+          className={` ${css.headerLink} ${css.linkBeforeX}`}
+        ></a>
       </nav>
 
       <nav aria-label="Site navigation panel">

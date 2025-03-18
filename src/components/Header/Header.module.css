@@ -63,6 +63,55 @@
   transition: background 0.25s ease, color 0.25s ease;
 }
 
+.linkBeforeDiscord::after {
+  content: ' ';
+  position: absolute;
+  margin: 0 auto;
+  color: #ffffff;
+
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(25%) translateX(25%);
+  background-repeat: no-repeat;
+  background-image: url('../../img/discord.svg');
+}
+.linkBeforeShip::after {
+  content: ' ';
+  position: absolute;
+  margin: 0 auto;
+  color: #ffffff;
+
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(25%) translateX(25%);
+  background-repeat: no-repeat;
+  background-image: url('../../img/Ship.svg');
+}
+.linkBeforeX::after {
+  content: ' ';
+  position: absolute;
+  margin: 0 auto;
+  color: #ffffff;
+
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(25%) translateX(25%);
+  background-repeat: no-repeat;
+  background-image: url('../../img/X.svg');
+}
+
 .headerLink:hover,
 .headerLink:focus {
   color: #f0f0f0;

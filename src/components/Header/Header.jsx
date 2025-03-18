@@ -3,9 +3,9 @@ import { throttle } from 'lodash';
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import css from './Header.module.css';
 import Logo from 'ui/Logo';
-// import Discord from 'ui/Discord';
-// import Ship from 'ui/Ship';
-// import X from 'ui/X';
+import Discord from 'ui/Discord';
+import Ship from 'ui/Ship';
+import X from 'ui/X';
 
 import MobileMenu from 'components/MobileMenu/MobileMenu';
 
@@ -71,14 +71,14 @@ function Header() {
           <Logo />
         </a>
 
-        {/* <ul className={css.mobileMenuContainer}>
+        <ul className={css.mobileMenuContainer}>
           <li>
             <a
               href="https://discord.com/"
               aria-label="Go to discord"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className={`${css.headerLink} ${
+              className={`${css.headerLink} ${css.linkBeforeDiscord}  ${
                 isScrolled ? css.headerLinkChangeColor : ''
               }`}
             >
@@ -91,7 +91,7 @@ function Header() {
               aria-label="Go to opensea"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className={`${css.headerLink} ${
+              className={`${css.headerLink}  ${css.linkBeforeShip} ${
                 isScrolled ? css.headerLinkChangeColor : ''
               }`}
             >
@@ -104,14 +104,14 @@ function Header() {
               aria-label="Go to twitter"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className={`${css.headerLink} ${
+              className={`${css.headerLink} ${css.linkBeforeX} ${
                 isScrolled ? css.headerLinkChangeColor : ''
               }`}
             >
               <X />
             </a>
           </li>
-        </ul> */}
+        </ul>
       </nav>
     </header>
   );

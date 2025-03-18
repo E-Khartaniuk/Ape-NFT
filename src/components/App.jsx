@@ -6,7 +6,7 @@ import Header from './Header/Header';
 import Hero from './Hero/Hero';
 import MindMap from './MindMap/MindMap';
 import FAQ from './FAQ/FAQ';
-import Collectiom from './Arts/Arts';
+import Collection from './Arts/Arts';
 import ContactUs from './ContactUs/ContactUs';
 import Footer from './Footer/Footer';
 
@@ -21,7 +21,7 @@ export const App = () => {
           <HaveNoLimits />
           <MindMap />
           <FAQ />
-          <Collectiom />
+          <Collection />
           <ContactUs />
         </main>
         <Footer />
