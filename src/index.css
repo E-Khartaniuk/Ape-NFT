@@ -1,10 +1,28 @@
 @import-normalize;
 
+@font-face {
+  font-family: 'Right Grotesk';
+  src: url('/public/fonts/RightGrotesk-Medium.otf') format('otf'),
+    url('/public/fonts/RightGrotesk-NarrowLight.otf') format('otf');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Biro Script Plus';
+  src: url('/public/fonts/BiroScriptPlus.woff2') format('woff2'),
+    url('/public/fonts/BiroScriptPlus-Bold.woff2') format('woff2');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Right Grotesk', 'Biro Script Plus', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #181818;
@@ -12,7 +30,7 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    'Right Grotesk', 'Biro Script Plus', monospace;
 }
 
 button {
