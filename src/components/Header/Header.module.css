@@ -66,14 +66,11 @@
 .linkBeforeDiscord::after {
   content: ' ';
   position: absolute;
-  margin: 0 auto;
+
   color: #ffffff;
 
-  display: flex;
   width: 48px;
   height: 48px;
-  justify-content: center;
-  align-items: center;
 
   transform: translateY(25%) translateX(25%);
   background-repeat: no-repeat;
@@ -82,14 +79,11 @@
 .linkBeforeShip::after {
   content: ' ';
   position: absolute;
-  margin: 0 auto;
+
   color: #ffffff;
 
-  display: flex;
   width: 48px;
   height: 48px;
-  justify-content: center;
-  align-items: center;
 
   transform: translateY(25%) translateX(25%);
   background-repeat: no-repeat;
@@ -98,14 +92,11 @@
 .linkBeforeX::after {
   content: ' ';
   position: absolute;
-  margin: 0 auto;
+
   color: #ffffff;
 
-  display: flex;
   width: 48px;
   height: 48px;
-  justify-content: center;
-  align-items: center;
 
   transform: translateY(25%) translateX(25%);
   background-repeat: no-repeat;
