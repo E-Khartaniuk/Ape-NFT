@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Right Grotesk';
-  src: url('/public/fonts/RightGrotesk-Medium.otf') format('otf'),
+  src: url('/public/fonts/RightGrotesk-CompactBlack.otf') format('otf'),
     url('/public/fonts/RightGrotesk-NarrowLight.otf') format('otf');
 
   font-weight: normal;
