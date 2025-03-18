@@ -71,7 +71,7 @@ function Header() {
           <Logo />
         </a>
 
-        <ul className={css.mobileMenuContainer}>
+        {/* <ul className={css.mobileMenuContainer}>
           <li>
             <a
               href="https://discord.com/"
@@ -111,7 +111,7 @@ function Header() {
               <X />
             </a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </header>
   );
