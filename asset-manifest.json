@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ape-NFT/static/css/main.f004a9a2.css",
-    "main.js": "/Ape-NFT/static/js/main.1c4f95e7.js",
+    "main.js": "/Ape-NFT/static/js/main.c300e5e5.js",
     "static/media/AboutImgDesctop.png": "/Ape-NFT/static/media/AboutImgDesctop.19b6ea4c5011b37e36ab.png",
     "static/media/Hero_Img_6s1_desctop1280.png": "/Ape-NFT/static/media/Hero_Img_6s1_desctop1280.6ff8b4be1f9d7d85c9ca.png",
     "static/media/BiroScriptPlus.woff2": "/Ape-NFT/static/media/BiroScriptPlus.9c417332f745a8ba9569.woff2",
@@ -36,10 +36,10 @@
     "static/media/cross.svg": "/Ape-NFT/static/media/cross.edb1e3de2dcfb38c65fcb7bf6d7cbddc.svg",
     "static/media/link_arrow.svg": "/Ape-NFT/static/media/link_arrow.737a3f1d9ac4e3cc9019b0e876f19598.svg",
     "main.f004a9a2.css.map": "/Ape-NFT/static/css/main.f004a9a2.css.map",
-    "main.1c4f95e7.js.map": "/Ape-NFT/static/js/main.1c4f95e7.js.map"
+    "main.c300e5e5.js.map": "/Ape-NFT/static/js/main.c300e5e5.js.map"
   },
   "entrypoints": [
     "static/css/main.f004a9a2.css",
-    "static/js/main.1c4f95e7.js"
+    "static/js/main.c300e5e5.js"
   ]
 }
